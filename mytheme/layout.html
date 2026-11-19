@@ -1,0 +1,21 @@
+
+{% extends "basic/layout.html" %}
+
+{%- block header %}
+<div id="header">
+    <p>Kohei Hasui</p>
+</div>
+{%- endblock header %}
+
+{%- block sidebar %}
+  <div id="sidebar">
+    <h2>sidebar</h2>
+  </div>
+{%- endblock sidebar %}
+
+{%- block document %}
+  <div id="document">
+    <h2> </h2>
+    {%- block body %}{%- endblock body %}
+  </div>
+{%- endblock document %}

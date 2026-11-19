@@ -1,0 +1,9 @@
+@import "main.css";
+
+a:link {
+    color: {{ theme_linkcolor }};
+}
+
+#header {
+    background-color: {{ theme_headerbgcolor }}
+}

@@ -1,0 +1,11 @@
+* | `"Heterogeneous Inflation Volatility in Production Networks: Producer vs. Consumer Prices" <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4968158>`_ 
+  | K. Hasui and Teruyoshi Kobayashi.
+  | Available at SSRN: 4968158, Jun, 2025.
+
+* | `"Habit Persistence and the Uncertainty Effect in a Liquidity Trap" <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4029534>`_ 
+  | K. Hasui and Satoshi Hoshino.
+  | Available at SSRN: 4029534, Jun, 2025.
+
+* | `"Liquidity Trap and Optimal Monetary Policy: Evaluations for U.S. Monetary Policy" <https://www.centralbank-project.jp/wp-content/uploads/2024/07/cb-wp051.pdf>`_ 
+  | K. Hasui, Tomohiro Sugo, and Yuki Teranishi
+  | Working Papers on Central Bank Communication 051, Jul 2024.

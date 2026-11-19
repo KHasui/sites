@@ -1,0 +1,63 @@
+
+Curriculum Vitae
+=================
+
+| 
+
+.. only:: html or singlehtml
+
+   .. raw:: html
+
+       
+
+       <ul class="simple">
+       <li><div class="a-target-_blank"><a target="_blank" href="https://khas.bitbucket.io/_downloads/cvkh.pdf">Full CV <img src="https://khas.bitbucket.io/pdficon4.png" width="22" height="22"></a></div></li>
+       <li><div class="a-target-_blank"><a target="_blank" href="https://researchmap.jp/khasui">Researchmap <img src="https://khas.bitbucket.io/tabicon2.png" width="11" height="11"></a></div></li>
+       <li><div class="a-target-_blank"><a target="_blank" href="https://ideas.repec.org/f/pko606.html">Ideas <img src="https://khas.bitbucket.io/tabicon2.png" width="11" height="11"></a></div></li>
+       </ul>
+
+
+
+------------------------------------------------------------------------
+
+Short C.V.
+^^^^^^^^^^^^^^^^^^^^^^^
+| 
+| (Last name / First name)
+| Hasui  / Kohei
+| 蓮井 / 康平
+ 
+|
+| (Sex / Nationality)
+| Male / Japan
+
+
+Current Position
+~~~~~~~~~~~~~~~~~~~~~~~~
+| Associate Professor, Department of Economics, Aichi University
+| Email: khasui [*] vega.aichi-u.ac.jp (Replace [*] with an atmark.)
+
+
+Education
+~~~~~~~~~~~~~~~~~~~~~~~~
+| Ph.D. in Economics, Kobe University, March 2015.
+| M.A. in Economics,  Kobe University, March 2012.
+| B.A. in Economics,  University of Hyogo, March 2010.
+
+
+Fields of Research Interest
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| *Macroeconomics (DSGE)*, *Monetary Policy*
+| 
+
+------------------------------------------------------------------------
+
+
+
+.. toctree::
+   :maxdepth: 1
+
+   summary
+   personaluse
+
+| 

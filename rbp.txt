@@ -1,0 +1,102 @@
+:math:`\theta \nu_t'\nu_t`
+============================
+
+Hansen and Sargent's (2008) Robust Control Theory: Application in DSGE Models 
+--------------------------------------------------------------------------------------
+ 
+| Last Update: |today|
+
+
+Bible
+---------------
+
+* | **Sargent, T. and L. P. Hansen (2008)** *Robustness,* Princeton NJ: Princeton University Press.
+
+
+Standard New Keynesian Model
+--------------------------------------------------------
+* | **Leitemo, K., and U. Soderstrom (2008b)** `“Robust monetary policy in the New Keynesian frame-work,” <https://doi.org/10.1017/S1365100507070058>`_ *Macroeconomic Dynamics* 12, 126--135
+
+
+  | Leitemo and Soderstrom (2008b) derive a closed analytical solution regarding robust policy under discretion (both Nash and Stackelberg) within the standard New Keynesian framework. They show that robust monetary policy responds aggressively to the cost-push shock to stabilize the inflation rate:
+
+  .. math::
+
+   &\max_{\nu_t} \min _{i_t} \mathbb{E}_t \sum_{j = 0}^{\infty} \beta ^j (\pi_{t+j}^2 + \lambda x_{t+j}^2 + \theta \nu_{t+j}'\nu_{t+j})
+   \\
+   &x_t = \mathbb{E}_t x_{t+1} - \sigma^{-1} (i_t - \mathbb{E}_t \pi_{t+1} - \Sigma_x (\epsilon_t^x + \nu_t^x)),
+   \\
+   &\pi_t = \beta \mathbb{E}_t\pi_{t+1} + \kappa x_t + \Sigma_{\pi} (\epsilon_t^{\pi} + \nu_t^{\pi}).
+
+  | where :math:`\nu_t = [\nu_t^{\pi}, \nu_t^x]`.
+
+* | **Giordani, P. and P. Soderlind (2004)** `“Solution of macromodels with Hansen-Sargent robust policies: some extensions,” <https://doi.org/10.1016/j.jedc.2003.11.001>`_ *Journal of Economic Dynamics and Control* 28, 2367--2397.
+
+  | Giordani and Soderlind (2004) propose the state-space method of robust control problem (They provide replication code). They show that, under robust monetary policy, the inflation, the output gap, and the policy rate respond more persistent and aggressively.
+
+  .. math::
+
+   &\max_{\nu_t} \min _{i_t} \mathbb{E}_t \sum_{j = 0}^{\infty} \beta ^j (\pi_{t+j}^2 + \lambda x_{t+j}^2 + \lambda_ii_t^2 + \theta \nu_{t+j}'\nu_{t+j})
+   \\
+   &x_t = \mathbb{E}_t x_{t+1} - \sigma^{-1} (i_t - \mathbb{E}_t \pi_{t+1} ) + (d_t + \nu_t^d),
+   \\
+   &\pi_t = \beta \mathbb{E}_t\pi_{t+1} + \kappa x_t + (e_t + \nu_t^e).
+
+  | where :math:`\nu_t = [\nu_t^d, \nu_t^e]`.
+
+
+* | **Dennis, R. (2010)** `“How robustness can lower the cost of discretion,” <https://doi.org/10.1016/j.jmoneco.2010.06.003>`_  *Journal of Monetary Economics* 57, 653--667.
+
+  |  Dennis (2010) analyzed how robustness changes the cost of the discretionary policy in the New Keynesian model with the hybrid IS curve and the hybrid Phillips curve. He showed that the robustness leads the central bank to stabilize the inflation more tightly in the approximating equilibrium, and then the welfare cost of discretionary policy decreases:
+
+  .. math::
+
+   &\max_{\nu_t} \min _{i_t} \mathbb{E}_t \sum_{j = 0}^{\infty} \beta ^j (\pi_{t+j}^2 + \lambda_cc_{t+j}^2 + \lambda_ii_t^2 + \theta \nu_{t+j}'\nu_{t+j})
+   \\
+   &c_t = (1-\gamma)\mathbb{E}_t c_{t+1} + \gamma c_{t-1} - \sigma^{-1} (i_t - \mathbb{E}_t \pi_{t+1} ) + (d_t + \nu_t^d),
+   \\
+   &\pi_t = \beta (1-\delta )\mathbb{E}_t\pi_{t+1} + \delta \pi_{t-1} + \kappa c_t + (e_t + \nu_t^e).
+
+  | where :math:`\nu_t = [\nu_t^d, \nu_t^e]`.
+
+
+
+Cost Channel
+--------------------------------------------------------
+
+* | **Tillmann, P. (2009b)** `“Robust monetary policy with the cost channel,” <https://doi.org/10.1111/j.1468-0335.2008.00697.x>`_  *Economica* 76, 486--504.
+
+  | Tillmann (2009b) examines robust monetary policy in a New Keynesian model with a cost channel. He shows that the cost channel dampens the effect of model uncertainty on the monetary policy.
+
+Incomplete Interest Rate Pass-Through
+------------------------------------------------------------------------
+
+* | **Gerke, R. and F. Hammermann (2016)** `“Robust monetary policy in a New Keynesian model with imperfect interest rate pass-through,” <https://doi.org/10.1017/S136510051400100X>`_  *Macroeconomic Dynamics* 20, 1504--1526.
+
+  | Gerke and Hammermann (2016) showed that the incomplete pass-through amplifies the aggressive responses in robust policy and makes economic fluctuations larger, and then this leads to the cost of taking a robust policy, called the “insurance premium”, becomes large as the incompleteness in interest rate pass-through increases. Though the robust policy is designed for model misspecification, such misspecification might not exist (approximating model). They showed that a robust policy might be undesirable if this is the case. 
+
+  .. math::
+
+   \text{Insurance Premium} = \frac{L^A - L^{REE} }{ L^W - L^{REE} } \times 100.
+
+  | where :math:`L^A` denotes welfare loss in the approximating model, :math:`L^W` denotes welfare loss in the worst-case, and :math:`L^{REE}` denotes welfare loss in the REE.
+
+
+Trend Inflation
+------------------------------------------------------------------------
+
+* | **Hasui, K. (2020)** `“A note on robust monetary policy and non-zero trend inflation,” <https://doi.org/10.1017/S1365100518000883>`_  *Macroeconomic Dynamics* 26, 1574--1594.
+
+  | Hasui (2020) studies how model uncertainty influences economic fluctuation when trend inflation is high. He shows that the model uncertainty might be the one of the factors causing large macroeconomic fluctuations when trend inflation is high.
+
+
+
+Structural-form Methods for Hansen and Sargent’s (2008)
+---------------------------------------------------------------------------
+
+* | **Dennis, R., K. Leitemo, and U. Soderstrom (2009)** `“Methods for robust control," <https://doi.org/10.1016/j.jedc.2009.02.011>`_  *Journal of Economic Dynamics and Control* 33, 1604--1616.
+
+  | Dennis et al (2009) presented a structural-form methods for Hansen and Sargent’s (2008) robust control problem to mitigate the difficulty in the state-space method. Their quantitative analyses showed that the central bank’s desire for robustness leads to increases in variance of the macroeconomic variables.
+
+| 
+|

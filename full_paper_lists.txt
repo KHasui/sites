@@ -1,0 +1,140 @@
+
+
+
+Research
+===============
+
+| 
+| Last Update: |today|
+
+
+
+.. only:: html or singlehtml
+
+   .. raw:: html
+
+       <div class="a-target-_blank"> Preprints of publications are downloadable from the page, <a target="_blank" href="https://khas.bitbucket.io/summary.html">Contents of My Paper. <img src="https://khas.bitbucket.io/tabicon.png" width="11" height="11"></a></div>
+
+
+Publication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. | `"Progressive taxation and robust monetary policy" <https://doi.org/10.1515/bejm-2021-0251>`_ 
+   | Kazuki Hiraga and Kohei Hasui
+   | *The B.E. Journal of Macroeconomics* 23(2), 845-884, 2023.
+
+#. | `"Optimal irreversible monetary policy" <https://doi.org/10.1016/j.euroecorev.2021.103707>`_
+   | Kohei Hasui, Teruyoshi Kobayashi,  and Tomohiro Sugo
+   | *European Economic Review* 134, 103707, 2021. 
+
+#. | `"How robustness can change the desirability of speed limit policy" <https://doi.org/10.1111/sjpe.12268>`_ 
+   | Kohei Hasui
+   | *Scottish Journal of Political Economy* 68(5), 553-570, 2021.
+
+#. | `"Trend growth and robust monetary policy" <https://doi.org/10.1515/bejm-2020-0133>`_ 
+   | Kohei Hasui
+   | *The B.E. Journal of Macroeconomics* 21(2), 449-472, 2021.
+
+#. | `"A note on robust monetary policy and non-zero trend inflation" <https://doi.org/10.1017/S1365100518000883>`_ 
+   | Kohei Hasui 
+   | *Macroeconomic Dynamics* 24(6), 1574-1594, 2020.   
+
+#. | `"Role of expectations in a liquidity trap" <https://doi.org/10.1016/j.jjie.2018.12.004>`_ 
+   | Kohei Hasui, Yoshiyuki Nakazono, and Yuki Teranishi
+   | *Journal of the Japanese and International Economies* 52, 201-215, 2019. 
+
+#. | `"Efficient immunization strategies to prevent financial contagion" <https://doi.org/10.1038/srep03834>`_
+   | Teruyoshi Kobayashi and Kohei Hasui
+   | *Scientific Reports* 4, 3834, 2014. 
+
+#. | `"The liquidity effect and tightening effect of the zero lower bound" <http://www.jsmeweb.org/jjmfe/pdf/2014aug/jjmfe_2014august_1.pdf>`_
+   | Kohei Hasui 
+   | *Japanese Journal of Monetary and Financial Economics* 2(2), 1-15, 2014. 
+
+
+Non-Refereed Publication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. | `"Monetary policy inertia, macroprudential policy, and financial stability in a liquidity trap" <http://id.nii.ac.jp/1249/00002792/>`_
+   | Kohei Hasui 
+   | Bulletin of Matsuyama University (Matsuyama Daigaku Ronshu) 32(5), 59-78, 2021.
+
+#. | `"Financial markets and the channels of monetary policy transmission" <https://doi.org/10.24546/81008462>`_
+   | Kohei Hasui and Teruyoshi Kobayashi 
+   | Journal of Economics and Business Administration (Kokumin-Keizai Zasshi)  207(2),  65-78, 2013. (in Japanese)
+
+
+Working Papers
+^^^^^^^^^^^^^^^^^^^^^
+
+* | `"Habit persistence and zero lower bound risk under discretionary monetary policy" <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4029534>`_  2022 (revised Nov 2023).
+  | K. Hasui and Satoshi Hoshino.
+  | SSRN Paper 4029534
+
+
+
+Work in progress
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* | "The aggregate price impact of sectoral cost-push shocks in production networks"  Sep 2023 (under revsion). 
+  | K. Hasui and Teruyoshi Kobayashi.
+
+* | `"Liquidity Trap and Optimal Monetary Policy Revisited" <http://www.price.e.u-tokyo.ac.jp/img/researchdata/pdf/p_wp079.pdf>`_  (work in progress, Sep 2023)
+  | K. Hasui, Tomohiro Sugo, and Yuki Teranishi
+  | UTokyo Price Project Working Paper Series University of Tokyo  No.79, 2016.
+
+* | "A note on habit persistence, equilibrium yield curves, and optimal discretionary policy in a liquidity trap"  2023.
+  | K. Hasui
+  | Presented at the Macro-Model seminar (APIR/JCER) on Sep  2022.
+
+* | "A note on loose commitment and trend inflation"  2023. 
+  | K. Hasui and Satoshi Hoshino
+  | Keywords: quasi/loose-commitment, and trend inflation.
+  | Presented at the 13th Sasashima seminar on Feb 17, 2023.
+
+
+
+Awards
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* | `Research Paper Award <https://www.rieb.kobe-u.ac.jp/edu-society/sympo/workshop_monetary/awards/index.html>`_ (Sep, 2021)
+  | Monetary Economics Seminar of Kobe University.
+  | (神戸大学金融研究会)
+
+
+Grants
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Principal Investigator:
+
+* | JSPS KAKENHI 22K01585 Grant-in-Aid for Scientific Research (C).
+  | FY2022-2025, JPY2,990,000 (Co-Investigator: `Satoshi Hoshino <https://researchmap.jp/shoshino>`_).
+* | The Nitto Foundation. The 38th Research Grant: Number 46.
+  | FY2022, JPY 700,000.
+* | JSPS KAKENHI 17K13768 Grant-in-Aid for Young Scientists (B).
+  | FY2017-2020, JPY3,510,000.
+
+Co-Investigator:
+
+* | Center Project Matsuyama University
+  | FY2017-2019 with Tatsuro Kakeshita (Principal Investigator) and Keiichiro Nishio.
+
+* | JSPS KAKENHI 16K03920 Grant-in-Aid for Scientific Research (C).
+  | FY2016-2019 (Principal Investigator: Tatsuro Kakeshita).
+
+
+|
+
+----------------------------------------------------------------------------------------------------
+
+ 
+
+Seminar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. only:: html or singlehtml
+
+   .. raw:: html
+
+       <div class="a-target-_blank"> <ul><li>愛知大学経済学会ささしまセミナー（通称：ささしまセミナー） <a target="_blank" href="https://sites.google.com/view/sasashima-seminar">External Link  <img src="https://khas.bitbucket.io/tabicon.png" width="11" height="11"></a></li></ul></div>
+
+
+
+| 
+|

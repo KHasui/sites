@@ -1,0 +1,14 @@
+Research
+========
+
+Publication
+-----------
+
+1. Efficient immunization strategies to prevent financial contagion, 
+| Teruyoshi Kobayashi and Kohei Hasui, 2014 *Scientific Reports*, 4, 3834
+
+2. ‹à—Zsê‚Æ‹à—Z­ô‚Ì”g‹yŒo˜H. ˜@ˆäN•½E¬—ÑÆ‹`.
+| ‘–¯ŒoÏGC207(2), 65-78. 2013.i¸“Ç–³j
+
+.. toctree::
+   :maxdepth: 1

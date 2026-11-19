@@ -1,0 +1,3423 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f3ea" />
+  <title>百首帳 — 小倉百人一首 暗記帳</title>
+  <meta name="description" content="番号・歌人・上の句・下の句を自由に覚えるための、小倉百人一首暗記ツール。" />
+  <style>
+:root{--bg:#f6f1e7;--paper:#fffdf8;--ink:#24231f;--muted:#777268;--line:#d9d0c0;--accent:#7b1f2f;--accent2:#b78c55;--green:#48664f;--shadow:0 18px 50px rgba(52,43,28,.08)}
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:radial-gradient(circle at top,#fbf8f1 0,var(--bg) 55%);color:var(--ink);font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;min-height:100vh}.app-shell{width:min(1080px,calc(100% - 28px));margin:auto;min-height:100vh;display:flex;flex-direction:column}.topbar{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:13px;align-items:center;background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer;font:inherit}.brand-mark{width:42px;height:42px;border:1px solid var(--ink);display:grid;place-items:center;font-size:22px}.brand strong{display:block;font-size:18px;letter-spacing:.12em}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.select-wrap{font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:center}.select-wrap select{border:1px solid var(--line);background:var(--paper);padding:8px 28px 8px 10px;color:var(--ink)}main{flex:1}.view{display:none}.view.active{display:block}.hero{padding:78px 0 48px;max-width:680px}.eyebrow{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.18em;color:var(--accent);font-weight:700}.hero h1{font-size:clamp(38px,6vw,68px);font-weight:500;line-height:1.2;letter-spacing:.08em;margin:14px 0 22px}.hero>p:last-child{color:var(--muted);line-height:2;margin:0}.primary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.menu-card{min-height:132px;padding:24px;border:1px solid var(--line);background:rgba(255,253,248,.72);display:grid;grid-template-columns:52px 1fr;text-align:left;gap:2px 16px;cursor:pointer;color:inherit;transition:.2s ease;font:inherit}.menu-card:hover{transform:translateY(-2px);border-color:#aa9e8a;background:var(--paper);box-shadow:var(--shadow)}.menu-card.featured{border-color:#8f6c5d;background:#fbf3ee}.menu-no{grid-row:1/3;font-family:system-ui,sans-serif;font-size:12px;color:var(--accent);letter-spacing:.12em;padding-top:4px}.menu-card strong{font-size:20px;font-weight:500;letter-spacing:.05em}.menu-card small{color:var(--muted);font-size:12px;line-height:1.7;margin-top:4px}.stats-strip{display:grid;grid-template-columns:repeat(3,1fr);margin:36px 0 64px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stats-strip div{text-align:center;padding:24px 10px;border-right:1px solid var(--line)}.stats-strip div:last-child{border-right:0}.stats-strip span{display:block;font-size:28px}.stats-strip small{color:var(--muted);font-size:11px}.study-head{display:flex;align-items:end;justify-content:space-between;padding:34px 0 14px}.ghost{background:none;border:0;color:var(--muted);padding:6px 0;cursor:pointer;font:inherit}.progress-text{text-align:right;color:var(--muted);font-size:12px}.progress-text strong{display:block;color:var(--ink);font-family:system-ui,sans-serif;font-size:14px;margin-top:5px}.progress{height:2px;background:#ded7cb}.progress span{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}.study-card{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);min-height:520px;margin:34px auto 70px;padding:56px clamp(28px,7vw,80px);max-width:820px;text-align:center}.prompt-label{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.15em;color:var(--muted)}.prompt{font-size:clamp(28px,5vw,48px);line-height:1.65;min-height:170px;display:grid;place-items:center;white-space:pre-line}.reveal{border:1px solid var(--ink);background:var(--ink);color:#fff;padding:14px 34px;min-width:180px;font:inherit;cursor:pointer;letter-spacing:.06em}.answer{margin-top:40px;border-top:1px solid var(--line);padding-top:36px}.answer-meta{display:flex;gap:14px;justify-content:center;color:var(--muted);font-size:13px}.poem-lines{font-size:clamp(20px,3.2vw,30px);line-height:1.9;margin:24px 0 30px}.poem-lines p{margin:0}.rating-label{font-size:12px;color:var(--muted);margin-bottom:10px}.rating-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.rate{border:1px solid var(--line);background:#fff;padding:14px 8px;font:inherit;font-size:24px;cursor:pointer}.rate span{display:block;font-size:10px;color:var(--muted);margin-top:4px}.rate:hover{border-color:#9a8d79}.session-summary{max-width:820px;margin:30px auto 70px;text-align:center;background:var(--paper);border:1px solid var(--line);padding:48px}.summary-numbers{display:grid;grid-template-columns:repeat(3,1fr);margin:28px 0}.summary-numbers strong{font-size:38px;display:block}.summary-numbers span{color:var(--muted)}.missed-list{text-align:left;margin:20px auto 30px;max-width:560px;line-height:1.9;color:var(--muted)}.list-head{padding:42px 0 22px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center}.list-head .ghost{grid-column:1/3;justify-self:start}.list-head h2{font-size:34px;font-weight:500;margin:0}.list-head input{width:min(420px,50vw);border:1px solid var(--line);background:var(--paper);padding:13px 16px;font:inherit}.poem-list{border-top:1px solid var(--line);margin-bottom:70px}.poem-row{display:grid;grid-template-columns:58px 170px 1fr;gap:20px;padding:22px 10px;border-bottom:1px solid var(--line);align-items:start}.poem-row .n{font-family:system-ui,sans-serif;color:var(--accent)}.poem-row .poet{font-size:15px}.poem-row .text{line-height:1.9}.poem-row .text span{display:block}.history-badge{display:inline-block;margin-top:7px;font-family:system-ui,sans-serif;font-size:10px;color:var(--muted)}footer{border-top:1px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7;padding:22px 0 30px;text-align:center}@media(max-width:720px){.app-shell{width:min(100% - 20px,1080px)}.topbar{height:72px}.brand small{display:none}.hero{padding:52px 6px 34px}.primary-grid{grid-template-columns:1fr}.menu-card{min-height:112px;padding:20px}.stats-strip{margin-bottom:44px}.study-card{padding:40px 20px;min-height:480px;margin-top:22px}.rating-buttons{gap:6px}.rate{padding:12px 4px}.list-head{grid-template-columns:1fr}.list-head .ghost{grid-column:1}.list-head input{width:100%}.poem-row{grid-template-columns:42px 1fr;gap:8px 14px}.poem-row .text{grid-column:2}.session-summary{padding:32px 18px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
+
+<style id="v3-typography-tuning">
+  /* v3: small-text readability pass */
+  .eyebrow,
+  .hero-kicker,
+  .hero .eyebrow {
+    font-size: 0.98rem !important;
+    letter-spacing: 0.14em;
+  }
+
+  .hero p,
+  .lead,
+  .hero-copy {
+    font-size: 1.05rem !important;
+    line-height: 1.9 !important;
+  }
+
+  .menu-no {
+    font-size: 1.12rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .menu-card strong {
+    font-size: 1.12rem !important;
+  }
+
+  .menu-card small {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+
+  #promptLabel,
+  .prompt-label,
+  .question-label {
+    font-size: 0.98rem !important;
+    letter-spacing: 0.08em;
+  }
+
+  .answer-meta,
+  .answer-meta .number,
+  .answer-meta .poet,
+  #answerNumber,
+  #answerPoet,
+  .answer-number,
+  .answer-poet {
+    font-size: 1rem !important;
+  }
+
+  .rating-title,
+  .self-check-title,
+  .recall-title,
+  #ratingTitle {
+    font-size: 1rem !important;
+  }
+
+  .answer-card .meta,
+  .answer-card .poet,
+  .answer-card .number {
+    font-size: 1rem !important;
+  }
+
+  @media (max-width: 640px) {
+    .eyebrow,
+    .hero-kicker,
+    .hero .eyebrow {
+      font-size: 0.94rem !important;
+    }
+
+    .hero p,
+    .lead,
+    .hero-copy {
+      font-size: 1rem !important;
+    }
+
+    .menu-no,
+    .menu-card strong {
+      font-size: 1.08rem !important;
+    }
+
+    .menu-card small {
+      font-size: 0.9rem !important;
+    }
+
+    #promptLabel,
+    .prompt-label,
+    .question-label,
+    .rating-title,
+    .self-check-title,
+    .recall-title,
+    #ratingTitle {
+      font-size: 0.96rem !important;
+    }
+  }
+</style>
+
+
+<style id="v4-accessibility-typography">
+  /* v4: readability-first typography for a wider age range.
+     Keep the main catchphrase ("百人一首暗記帳") unchanged. */
+
+  body {
+    color: #29251f !important;
+  }
+
+  /* Small/light secondary text: larger and darker */
+  .eyebrow,
+  .hero-kicker,
+  .hero .eyebrow {
+    font-size: 1.15rem !important;
+    color: #514b42 !important;
+    font-weight: 600 !important;
+  }
+
+  .hero p:not(.hero-title):not(.lead),
+  .hero-copy {
+    font-size: 1.18rem !important;
+    line-height: 1.9 !important;
+    color: #4a443b !important;
+  }
+
+  /* Menu cards */
+  .menu-no {
+    font-size: 1.28rem !important;
+    color: #3f3931 !important;
+    font-weight: 700 !important;
+  }
+
+  .menu-card strong {
+    font-size: 1.28rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .menu-card small {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+    color: #5a5349 !important;
+  }
+
+  /* Controls / switches / small navigation text */
+  .select-wrap,
+  select,
+  button,
+  .ghost-btn,
+  .back-btn,
+  .progress-text,
+  .stats-strip,
+  .stats-strip small {
+    font-size: 1rem !important;
+  }
+
+  .select-wrap,
+  .progress-text,
+  .stats-strip,
+  .stats-strip small {
+    color: #514b42 !important;
+  }
+
+  /* Study screen labels */
+  #promptLabel,
+  .prompt-label,
+  .question-label {
+    font-size: 1.15rem !important;
+    color: #4a443b !important;
+    font-weight: 600 !important;
+  }
+
+  /* Answer metadata: poem number and poet */
+  .answer-meta,
+  .answer-meta .number,
+  .answer-meta .poet,
+  #answerNumber,
+  #answerPoet,
+  .answer-number,
+  .answer-poet,
+  .answer-card .meta,
+  .answer-card .poet,
+  .answer-card .number {
+    font-size: 1.15rem !important;
+    color: #3f3931 !important;
+    font-weight: 600 !important;
+  }
+
+  /* "正解できましたか？" and nearby self-check text */
+  .rating-title,
+  .self-check-title,
+  .recall-title,
+  #ratingTitle {
+    font-size: 1.15rem !important;
+    color: #3f3931 !important;
+    font-weight: 600 !important;
+  }
+
+  /* List/search page secondary text */
+  .list-view small,
+  .poem-row small,
+  .muted,
+  .helper-text,
+  .search-note {
+    font-size: 1rem !important;
+    color: #5a5349 !important;
+  }
+
+  /* Preserve the existing size of the requested catchphrase. */
+  .lead {
+    font-size: inherit;
+  }
+
+  @media (max-width: 640px) {
+    .eyebrow,
+    .hero-kicker,
+    .hero .eyebrow,
+    #promptLabel,
+    .prompt-label,
+    .question-label,
+    .rating-title,
+    .self-check-title,
+    .recall-title,
+    #ratingTitle {
+      font-size: 1.08rem !important;
+    }
+
+    .menu-no,
+    .menu-card strong {
+      font-size: 1.2rem !important;
+    }
+
+    .menu-card small {
+      font-size: 1rem !important;
+    }
+
+    .hero p:not(.hero-title):not(.lead),
+    .hero-copy {
+      font-size: 1.08rem !important;
+    }
+  }
+</style>
+
+
+<style id="v5-white-background">
+  html, body {
+    background: #ffffff !important;
+  }
+  body::before,
+  body::after {
+    background: transparent !important;
+  }
+</style>
+
+
+<style id="v6-title-colors">
+  /* 茶金：HYAKUNIN ISSHU MEMORY */
+  .eyebrow,
+  .hero-kicker,
+  .hero .eyebrow {
+    color: #80633A !important;
+  }
+
+  /* 深緑：説明文 */
+  .hero p:not(.hero-title):not(.lead),
+  .hero-copy {
+    color: #31543B !important;
+  }
+</style>
+
+
+<style id="v7-title-color-fix">
+  /* 最終指定：英字タイトルだけ茶金 */
+  .hero .eyebrow,
+  .hero .hero-kicker,
+  .eyebrow {
+    color: #80633A !important;
+  }
+
+  /* 説明文だけ深緑 */
+  .hero .hero-copy,
+  .hero p.hero-copy {
+    color: #31543B !important;
+  }
+</style>
+
+
+<style id="v8-list-font-size">
+  /* 00 百首一覧：一覧内の文字を一段階大きく */
+  #listView,
+  .list-view {
+    font-size: 1.08rem !important;
+  }
+
+  #listView input,
+  .list-view input,
+  #listView select,
+  .list-view select {
+    font-size: 1.05rem !important;
+  }
+
+  #listView .poem-row,
+  .list-view .poem-row {
+    font-size: 1.08rem !important;
+    line-height: 1.75 !important;
+  }
+
+  #listView .poem-row strong,
+  #listView .poem-row .poet,
+  #listView .poem-row .number,
+  .list-view .poem-row strong,
+  .list-view .poem-row .poet,
+  .list-view .poem-row .number {
+    font-size: 1.12rem !important;
+  }
+
+  #listView .poem-row small,
+  .list-view .poem-row small,
+  #listView .muted,
+  .list-view .muted {
+    font-size: 1.02rem !important;
+    line-height: 1.7 !important;
+  }
+
+  @media (max-width: 640px) {
+    #listView,
+    .list-view,
+    #listView .poem-row,
+    .list-view .poem-row {
+      font-size: 1.04rem !important;
+    }
+
+    #listView .poem-row strong,
+    #listView .poem-row .poet,
+    #listView .poem-row .number,
+    .list-view .poem-row strong,
+    .list-view .poem-row .poet,
+    .list-view .poem-row .number {
+      font-size: 1.08rem !important;
+    }
+  }
+</style>
+
+
+<style id="v9-list-text-contrast">
+  /* 00 百首一覧：文字色を濃くして可読性を向上 */
+  #listView,
+  .list-view,
+  #listView .poem-row,
+  .list-view .poem-row {
+    color: #29251f !important;
+  }
+
+  #listView .poem-row strong,
+  #listView .poem-row .poet,
+  #listView .poem-row .number,
+  .list-view .poem-row strong,
+  .list-view .poem-row .poet,
+  .list-view .poem-row .number {
+    color: #211e1a !important;
+  }
+
+  #listView .poem-row small,
+  .list-view .poem-row small,
+  #listView .muted,
+  .list-view .muted,
+  #listView .helper-text,
+  .list-view .helper-text {
+    color: #49443d !important;
+  }
+
+  #listView input,
+  .list-view input {
+    color: #29251f !important;
+  }
+
+  #listView input::placeholder,
+  .list-view input::placeholder {
+    color: #686159 !important;
+    opacity: 1 !important;
+  }
+</style>
+
+
+<style id="v10-menu-pastels">
+  /* 00–04：淡く、落ち着いた異なる色 */
+  .primary-grid .menu-card:nth-child(1) {
+    background: #F3E9DD !important; /* 00 生成りベージュ */
+    border-color: #DCCBBB !important;
+  }
+  .primary-grid .menu-card:nth-child(2) {
+    background: #E7F0E8 !important; /* 01 若草 */
+    border-color: #C8D9CA !important;
+  }
+  .primary-grid .menu-card:nth-child(3) {
+    background: #E8EFF5 !important; /* 02 淡い藍・水色 */
+    border-color: #C9D5DF !important;
+  }
+  .primary-grid .menu-card:nth-child(4) {
+    background: #F2E8EE !important; /* 03 淡い藤・桜 */
+    border-color: #DCCAD5 !important;
+  }
+  .primary-grid .menu-card:nth-child(5) {
+    background: #F4EFDC !important; /* 04 淡い山吹 */
+    border-color: #DED5B7 !important;
+  }
+
+  /* featured指定があっても色を統一的に見せる */
+  .primary-grid .menu-card.featured {
+    box-shadow: none !important;
+  }
+
+  .primary-grid .menu-card:hover {
+    filter: brightness(0.985);
+  }
+</style>
+
+
+<style id="v11-button04-gray">
+  /* 04 番号→全文：淡いグレー */
+  .primary-grid .menu-card:nth-child(5) {
+    background: #ECECEC !important;
+    border-color: #D2D2D2 !important;
+  }
+</style>
+
+
+<style id="v12-range-controls">
+  .range-wrap { min-width: 260px; }
+  .range-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
+  .range-controls select {
+    min-width: 76px;
+  }
+  .range-sep {
+    color: #4f4941;
+    font-weight: 600;
+  }
+  .range-count-label {
+    color: #5b554d;
+    font-size: 0.98rem;
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .range-wrap { min-width: 100%; }
+    .range-controls {
+      width: 100%;
+    }
+  }
+</style>
+
+
+<style id="v13-settings-layout-fix">
+  .settings,
+  .controls,
+  .top-controls,
+  .toolbar {
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+  }
+
+  .select-wrap {
+    flex: 0 0 auto !important;
+  }
+
+  #scriptMode {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  @media (max-width: 900px) {
+    .settings,
+    .controls,
+    .top-controls,
+    .toolbar {
+      gap: 0.75rem !important;
+    }
+  }
+</style>
+
+
+<style id="v14-controls-fix">
+  .settings,
+  .controls,
+  .top-controls,
+  .toolbar {
+    overflow: visible !important;
+  }
+
+  .select-wrap {
+    position: relative !important;
+    z-index: 20 !important;
+  }
+
+  .select-wrap select,
+  #scriptMode,
+  #orderMode,
+  #rangeStart,
+  #rangeEnd,
+  #questionCount {
+    position: relative !important;
+    z-index: 30 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  #questionCount {
+    min-width: 120px !important;
+  }
+
+  .range-controls {
+    position: relative !important;
+    z-index: 20 !important;
+  }
+</style>
+
+
+<style id="v15-top-actions-rebuild">
+  .topbar {
+    height: auto !important;
+    min-height: 88px !important;
+    padding: 14px 0 !important;
+    gap: 18px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .top-actions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 12px 16px !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    flex: 1 1 560px !important;
+  }
+
+  .top-actions .select-wrap {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex: 0 0 auto !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
+  .top-actions select {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 11 !important;
+  }
+
+  #scriptMode { min-width: 104px !important; }
+  #orderMode { min-width: 112px !important; }
+  #questionCount { min-width: 124px !important; }
+
+  @media (max-width: 760px) {
+    .topbar {
+      align-items: flex-start !important;
+    }
+    .top-actions {
+      flex-basis: 100% !important;
+      justify-content: flex-start !important;
+    }
+  }
+</style>
+
+
+<style id="v16-control-order">
+  .top-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 10px !important;
+  }
+  .top-actions .control-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px 16px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  @media (max-width: 760px) {
+    .top-actions {
+      align-items: flex-start !important;
+    }
+    .top-actions .control-row {
+      justify-content: flex-start;
+    }
+  }
+</style>
+
+
+<style id="v17-study-font-match">
+  /* 出題文と解答文を同じ大きさに */
+  .prompt,
+  .poem-lines {
+    font-size: clamp(22px, 3.2vw, 30px) !important;
+    line-height: 1.9 !important;
+  }
+</style>
+
+
+<style id="v18-description-one-line">
+  /* タイトル下の説明文は、十分な画面幅では1行表示 */
+  .hero .hero-copy,
+  .hero p.hero-copy {
+    white-space: nowrap !important;
+  }
+
+  /* スマホなど、1行では画面からはみ出す場合だけ自然に折り返す */
+  @media (max-width: 760px) {
+    .hero .hero-copy,
+    .hero p.hero-copy {
+      white-space: normal !important;
+    }
+  }
+</style>
+
+
+<style id="v19-hero-description-width">
+  /* 見出し側の横幅制限を説明文には引き継がせない */
+  .hero {
+    overflow: visible !important;
+  }
+
+  .hero .hero-copy,
+  .hero p.hero-copy,
+  .hero .subtitle,
+  .hero .lead {
+    width: max-content !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+  }
+
+  @media (max-width: 760px) {
+    .hero .hero-copy,
+    .hero p.hero-copy,
+    .hero .subtitle,
+    .hero .lead {
+      width: auto !important;
+      max-width: 100% !important;
+      white-space: normal !important;
+    }
+  }
+</style>
+
+
+<style id="v20-exact-description-fix">
+  /* 説明文そのものを直接指定。親要素の幅制限に関係なくPCでは1行。 */
+  .hero-description {
+    display: block !important;
+    width: max-content !important;
+    max-width: none !important;
+    min-width: max-content !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  @media (max-width: 760px) {
+    .hero-description {
+      width: auto !important;
+      min-width: 0 !important;
+      max-width: 100% !important;
+      white-space: normal !important;
+      word-break: normal !important;
+      overflow-wrap: anywhere !important;
+    }
+  }
+</style>
+
+
+
+<style id="v28-clean-fade">
+  @keyframes viewFadeInSafe {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .view.fade-enter {
+    animation: viewFadeInSafe 0.35s ease-out both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .view.fade-enter { animation: none !important; }
+  }
+</style>
+
+
+<style id="v29-sticky-header">
+  /* 上部の操作バーをスクロール中も固定 */
+  .topbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: #fff !important;
+  }
+</style>
+
+
+<style id="v31-about">
+  .footer-link {
+    appearance: none;
+    border: 0;
+    background: none;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .footer-link:hover { opacity: .68; }
+
+  .about-modal[hidden] { display: none !important; }
+  .about-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+  }
+  .about-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 31, 27, .32);
+    backdrop-filter: blur(2px);
+  }
+  .about-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(680px, 100%);
+    max-height: min(78vh, 720px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 38px 42px 36px;
+    background: #fff;
+    border: 1px solid var(--line);
+    box-shadow: 0 18px 60px rgba(35,31,27,.14);
+    text-align: left;
+  }
+  .about-dialog h2 {
+    margin: 5px 0 24px;
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 500;
+    letter-spacing: .06em;
+  }
+  .about-dialog p {
+    margin: 0 0 17px;
+    font-size: 15px;
+    line-height: 2;
+    color: #4b4945;
+  }
+  .about-eyebrow {
+    margin: 0 !important;
+    color: #80633A !important;
+    font-family: system-ui, sans-serif;
+    font-size: 11px !important;
+    font-weight: 700;
+    letter-spacing: .18em;
+  }
+  .about-close {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    background: transparent;
+    color: #55514b;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  @media (max-width: 620px) {
+    .about-modal { padding: 14px; }
+    .about-dialog { padding: 34px 24px 28px; }
+  }
+</style>
+
+
+<style id="v33-range-dropdown-direction">
+  /* 範囲の終了側プルダウンが下方向に開きやすいよう、固定ヘッダー直下に余裕を確保 */
+  #rangeEnd {
+    position: relative !important;
+  }
+
+  /* ネイティブselectの開く向きはブラウザ依存なので、
+     操作時にページ上端へ寄りすぎないよう scroll-margin を設定 */
+  #rangeEnd:focus {
+    scroll-margin-top: 180px;
+  }
+</style>
+
+
+<style id="v37-rating-font-size">
+  /* 自己評価エリアを読みやすく */
+  .rating-title,
+  .recall-title,
+  .rating-area > p,
+  .rating-area > div:first-child {
+    font-size: 22px !important;
+    line-height: 1.6 !important;
+  }
+
+  .rate {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+</style>
+
+
+<style id="v38-rating-final-fix">
+  .rating-label {
+    font-size: 22px !important;
+    line-height: 1.6 !important;
+    color: #3f3931 !important;
+    font-weight: 600 !important;
+  }
+
+  .rate {
+    font-size: 22px !important;
+    line-height: 1.35 !important;
+  }
+
+  .rate span {
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+    margin-top: 5px !important;
+    color: #4f493f !important;
+  }
+</style>
+
+
+<style id="v39-full-poet-mode">
+  #prompt span {
+    display: block;
+  }
+</style>
+
+
+<style id="v40-swap-menu-04-05-colors">
+  /* 04 全文→歌人：05側の白系 */
+  .primary-grid .menu-card:nth-child(5) {
+    background: rgba(255,253,248,.72) !important;
+    border-color: var(--line) !important;
+  }
+
+  /* 05 番号→全文：旧04の淡いグレー */
+  .primary-grid .menu-card:nth-child(6) {
+    background: #ECECEC !important;
+    border-color: #D2D2D2 !important;
+  }
+</style>
+
+
+<style id="v42-study-target">
+  #studyTarget {
+    min-width: 132px;
+  }
+  @media (max-width: 760px) {
+    #studyTarget {
+      min-width: 0;
+    }
+  }
+</style>
+
+
+<style id="v43-mode-stats-list-results">
+  .mode-stats {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    margin: 36px 0 64px;
+  }
+  .mode-stat-card {
+    border: 1px solid var(--line);
+    background: rgba(255,253,248,.5);
+    padding: 16px 12px;
+    min-width: 0;
+  }
+  .mode-stat-card > strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 3px;
+  }
+  .mode-stat-card > span {
+    display: block;
+    font-size: .96rem;
+    line-height: 1.45;
+    min-height: 2.8em;
+  }
+  .mode-stat-card small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 8px;
+    margin-top: 10px;
+    color: #514b42;
+    font-size: .93rem;
+  }
+  .mode-stat-card small b {
+    font-weight: 500;
+  }
+
+  #listView .list-head {
+    grid-template-columns: 1fr;
+  }
+  .list-search-row,
+  .list-filter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  #listView .list-head input {
+    flex: 1 1 360px;
+    width: auto;
+    min-width: 220px;
+  }
+  #listView .list-head select {
+    border: 1px solid var(--line);
+    background: var(--paper);
+    padding: 12px 32px 12px 12px;
+    font: inherit;
+  }
+  .list-filter-row > span {
+    color: #514b42;
+    font-size: 1rem;
+    margin-right: 2px;
+  }
+
+  .poem-list-header,
+  #listView .poem-row {
+    display: grid !important;
+    grid-template-columns: 54px 150px minmax(300px, 1fr) repeat(5, 42px) !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+  .poem-list-header {
+    padding: 10px 10px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    color: #6a6257;
+    font-size: .86rem;
+    text-align: center;
+  }
+  .poem-list-header span:nth-child(1),
+  .poem-list-header span:nth-child(2),
+  .poem-list-header span:nth-child(3) {
+    text-align: left;
+  }
+  #listView .poem-list {
+    border-top: 0;
+  }
+  #listView .poem-row {
+    padding: 18px 10px !important;
+  }
+  #listView .poem-row .text {
+    grid-column: auto !important;
+  }
+  .mode-result {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    font-family: system-ui, sans-serif;
+    font-size: 1.08rem;
+    line-height: 1;
+    justify-self: center;
+    background: #fff;
+  }
+  .mode-result.good { background: #eef4ee; }
+  .mode-result.maybe { background: #f7f1df; }
+  .mode-result.bad { background: #f5e8e8; }
+  .mode-result.none { color: #aaa39a; background: #f7f6f3; }
+  .list-empty { padding: 28px 10px; }
+
+  @media (max-width: 900px) {
+    .mode-stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .poem-list-header {
+      display: none;
+    }
+    #listView .poem-row {
+      grid-template-columns: 42px minmax(0, 1fr) repeat(5, 34px) !important;
+      gap: 8px 7px !important;
+      align-items: start !important;
+    }
+    #listView .poem-row .poet {
+      grid-column: 2 / -1;
+    }
+    #listView .poem-row .text {
+      grid-column: 2 / -1 !important;
+    }
+    #listView .poem-row .mode-result {
+      grid-row: 3;
+    }
+    #listView .poem-row .mode-result:nth-of-type(4) { grid-column: 2; }
+    #listView .poem-row .mode-result:nth-of-type(5) { grid-column: 3; }
+    #listView .poem-row .mode-result:nth-of-type(6) { grid-column: 4; }
+    #listView .poem-row .mode-result:nth-of-type(7) { grid-column: 5; }
+    #listView .poem-row .mode-result:nth-of-type(8) { grid-column: 6; }
+  }
+
+  @media (max-width: 560px) {
+    .mode-stats {
+      grid-template-columns: 1fr;
+    }
+    .mode-stat-card > span {
+      min-height: 0;
+    }
+    .mode-stat-card small {
+      grid-template-columns: repeat(4, auto);
+      justify-content: start;
+      gap: 8px 14px;
+    }
+    .list-search-row,
+    .list-filter-row {
+      align-items: stretch;
+    }
+    #listView .list-head input,
+    #listView .list-head select {
+      width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+
+<style id="v44-excel-export">
+  .excel-export {
+    border: 1px solid #8f9f8f;
+    background: #f1f6f1;
+    color: #31543B;
+    padding: 11px 18px;
+    font: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .excel-export:hover {
+    background: #e7f0e8;
+  }
+</style>
+
+
+<style id="v45-answer-font-slightly-larger">
+  /* 解答表示を一段だけ大きく */
+  #answer .answer-meta,
+  #answerNumber,
+  #answerPoet {
+    font-size: 1.28rem !important;
+  }
+  #answer .poem-lines {
+    font-size: clamp(24px, 3.45vw, 32px) !important;
+    line-height: 1.9 !important;
+  }
+</style>
+
+
+<style id="v46-reset-results">
+  .reset-results-btn {
+    border: 1px solid #cbbfb3;
+    background: #fff;
+    color: #655c52;
+    padding: 10px 14px;
+    font: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .reset-results-btn:hover {
+    background: #f5f1ec;
+  }
+  .reset-dialog {
+    max-width: 540px;
+  }
+  .reset-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 26px;
+  }
+  .reset-confirm {
+    border: 1px solid #9d6b67;
+    background: #8d5d59;
+    color: #fff;
+    padding: 11px 18px;
+    font: inherit;
+    cursor: pointer;
+  }
+  @media (max-width: 760px) {
+    .reset-results-btn { width: 100%; }
+  }
+</style>
+
+
+<style id="v47-reset-below-results">
+  .results-reset-area {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -48px;
+    margin-bottom: 54px;
+  }
+  .results-reset-area .reset-results-btn {
+    width: auto;
+  }
+  @media (max-width: 760px) {
+    .results-reset-area {
+      margin-top: -30px;
+      margin-bottom: 42px;
+    }
+    .results-reset-area .reset-results-btn {
+      width: auto;
+    }
+  }
+</style>
+
+
+<style id="v48-mobile-poem-list-cards">
+  @media (max-width: 760px) {
+    /* 00 百首一覧：スマホでは横長の表を縦型カードにする */
+    #listView .poem-list-header {
+      display: none !important;
+    }
+
+    #listView .poem-list {
+      display: grid !important;
+      gap: 12px !important;
+    }
+
+    #listView .poem-row {
+      display: grid !important;
+      grid-template-columns: auto 1fr !important;
+      grid-template-areas:
+        "number poet"
+        "poem poem"
+        "result result" !important;
+      column-gap: 12px !important;
+      row-gap: 9px !important;
+      padding: 17px 16px 15px !important;
+      border: 1px solid #ddd4c7 !important;
+      border-radius: 10px !important;
+      background: #fff !important;
+      min-width: 0 !important;
+      align-items: baseline !important;
+    }
+
+    #listView .poem-row .n {
+      grid-area: number !important;
+      min-width: 0 !important;
+      width: auto !important;
+      font-size: 1.08rem !important;
+      font-weight: 700 !important;
+      color: #80633A !important;
+    }
+
+    #listView .poem-row .poet {
+      grid-area: poet !important;
+      min-width: 0 !important;
+      width: auto !important;
+      font-size: 1.08rem !important;
+      font-weight: 600 !important;
+      color: #332f29 !important;
+    }
+
+    #listView .poem-row .text {
+      grid-area: poem !important;
+      min-width: 0 !important;
+      width: 100% !important;
+      padding: 3px 0 5px !important;
+      font-size: 1.08rem !important;
+      line-height: 1.85 !important;
+      color: #332f29 !important;
+    }
+
+    #listView .poem-row .text span {
+      display: block !important;
+      overflow-wrap: anywhere !important;
+    }
+
+    #listView .poem-row .mode-result {
+      min-width: 0 !important;
+      width: auto !important;
+      height: auto !important;
+      padding: 7px 4px !important;
+      border-radius: 7px !important;
+      text-align: center !important;
+      font-size: 1.05rem !important;
+    }
+
+    /* JSでは結果セルが5個連続しているため、最後の5セルをカード下部に横並び */
+    #listView .poem-row {
+      position: relative !important;
+    }
+
+    #listView .poem-row .mode-result:nth-last-child(5) {
+      grid-area: result !important;
+      display: grid !important;
+      grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    /* 個々の結果セルは contents 化して、5つを同じ行へ流す */
+    #listView .poem-row .mode-result {
+      grid-row: 3 !important;
+    }
+    #listView .poem-row .mode-result:nth-last-child(5) { grid-column: 1 / 2 !important; }
+    #listView .poem-row .mode-result:nth-last-child(4) { grid-column: 2 / 3 !important; }
+    #listView .poem-row .mode-result:nth-last-child(3) { grid-column: 3 / 4 !important; }
+    #listView .poem-row .mode-result:nth-last-child(2) { grid-column: 4 / 5 !important; }
+    #listView .poem-row .mode-result:nth-last-child(1) { grid-column: 5 / 6 !important; }
+
+    /* 5列の結果用にカード全体の第3行だけ5等分 */
+    #listView .poem-row {
+      grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+      grid-template-areas:
+        "number poet poet poet poet"
+        "poem poem poem poem poem"
+        "r1 r2 r3 r4 r5" !important;
+    }
+    #listView .poem-row .mode-result:nth-last-child(5) { grid-area: r1 !important; }
+    #listView .poem-row .mode-result:nth-last-child(4) { grid-area: r2 !important; }
+    #listView .poem-row .mode-result:nth-last-child(3) { grid-area: r3 !important; }
+    #listView .poem-row .mode-result:nth-last-child(2) { grid-area: r4 !important; }
+    #listView .poem-row .mode-result:nth-last-child(1) { grid-area: r5 !important; }
+
+    #listView .poem-row .mode-result::before {
+      display: block !important;
+      margin-bottom: 2px !important;
+      font-size: .72rem !important;
+      line-height: 1 !important;
+      color: #777268 !important;
+      font-weight: 500 !important;
+    }
+    #listView .poem-row .mode-result:nth-last-child(5)::before { content: "01"; }
+    #listView .poem-row .mode-result:nth-last-child(4)::before { content: "02"; }
+    #listView .poem-row .mode-result:nth-last-child(3)::before { content: "03"; }
+    #listView .poem-row .mode-result:nth-last-child(2)::before { content: "04"; }
+    #listView .poem-row .mode-result:nth-last-child(1)::before { content: "05"; }
+
+    /* 一覧上部の操作類もスマホで無理に横並びにしない */
+    #listView .list-search-row,
+    #listView .list-controls {
+      width: 100% !important;
+      min-width: 0 !important;
+    }
+
+    #listView .list-search-row {
+      grid-column: 1 / -1 !important;
+    }
+
+    #listView .list-search-row input,
+    #listView input,
+    #listView select {
+      max-width: 100% !important;
+    }
+
+    #listView {
+      overflow-x: hidden !important;
+    }
+  }
+</style>
+
+
+<style id="v49-mobile-settings-collapse">
+  /* PCでは従来どおり。折りたたみボタンはスマホだけ表示 */
+  .mobile-settings-toggle {
+    display: none;
+  }
+
+  @media (max-width: 760px) {
+    .topbar {
+      padding-bottom: 10px !important;
+    }
+
+    .mobile-settings-toggle {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 12px;
+      border: 1px solid #d9d0c0;
+      border-radius: 9px;
+      background: #fff;
+      color: #332f29;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .mobile-settings-title {
+      font-weight: 700;
+      white-space: nowrap;
+      color: #4a433a;
+    }
+
+    .mobile-settings-summary {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #6f675e;
+      font-size: .95rem;
+      text-align: right;
+    }
+
+    .mobile-settings-chevron {
+      font-size: 1.18rem;
+      line-height: 1;
+      transition: transform .18s ease;
+      color: #80633A;
+    }
+
+    .mobile-settings-toggle[aria-expanded="true"] .mobile-settings-chevron {
+      transform: rotate(180deg);
+    }
+
+    #topSettingsPanel {
+      display: none !important;
+      margin-top: 10px !important;
+      padding-top: 0 !important;
+    }
+
+    #topSettingsPanel.mobile-open {
+      display: block !important;
+    }
+
+    #topSettingsPanel .control-row {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+      gap: 10px 12px !important;
+      width: 100% !important;
+    }
+
+    #topSettingsPanel .control-row + .control-row {
+      margin-top: 10px !important;
+    }
+
+    #topSettingsPanel .select-wrap {
+      min-width: 0 !important;
+      width: 100% !important;
+    }
+
+    #topSettingsPanel .range-wrap {
+      grid-column: 1 / -1 !important;
+    }
+
+    #topSettingsPanel select {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    #topSettingsPanel .range-controls {
+      display: grid !important;
+      grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto !important;
+      gap: 6px !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-settings-chevron {
+      transition: none !important;
+    }
+  }
+</style>
+
+
+<style id="v50-rounded-menu-cards">
+  /* 00〜05のメニューボタンを少し柔らかい角丸に */
+  .primary-grid .menu-card {
+    border-radius: 16px !important;
+  }
+</style>
+
+
+<style id="v51-desktop-sticky-list-header">
+  @media (min-width: 761px) {
+    #listView .poem-list-header {
+      position: sticky !important;
+      top: var(--hyakushucho-topbar-height, 0px) !important;
+      z-index: 900 !important;
+      background: #fff !important;
+      box-shadow: 0 1px 0 rgba(120, 108, 92, .18) !important;
+    }
+  }
+</style>
+
+
+<style id="v52-back-to-top">
+  .back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 1200;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 13px;
+    border: 1px solid #cfc4b5;
+    border-radius: 999px;
+    background: rgba(255,255,255,.96);
+    color: #5c5146;
+    font: inherit;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(70, 58, 45, .10);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .back-to-top:hover {
+    background: #f7f3ee;
+  }
+
+  .back-to-top span[aria-hidden="true"] {
+    font-size: 1.05em;
+    line-height: 1;
+  }
+
+  @media (max-width: 760px) {
+    .back-to-top {
+      right: 14px;
+      bottom: 14px;
+      padding: 10px 12px;
+      font-size: .95rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .back-to-top {
+      transition: none !important;
+    }
+  }
+</style>
+
+
+<style id="v53-mobile-result-alignment">
+  @media (max-width: 760px) {
+    #listView .poem-row .mode-result {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 5px !important;
+      white-space: nowrap !important;
+    }
+
+    #listView .poem-row .mode-result::before {
+      display: inline-block !important;
+      margin: 0 !important;
+      line-height: 1 !important;
+      flex: 0 0 auto !important;
+    }
+  }
+</style>
+
+
+<style id="v54-mobile-result-alignment-fix">
+  @media (max-width: 760px) {
+    #listView .poem-row .mode-result:nth-last-child(5) {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 5px !important;
+    }
+
+    #listView .poem-row .mode-result::before {
+      display: inline-block !important;
+      margin: 0 !important;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" id="homeBtn" aria-label="ホームへ">
+        <span class="brand-mark">百</span>
+        <span><strong>百首帳</strong><small>小倉百人一首 暗記帳</small></span>
+      </button>
+      <button type="button" id="mobileSettingsToggle" class="mobile-settings-toggle" aria-expanded="false" aria-controls="topSettingsPanel">
+          <span class="mobile-settings-title">出題設定</span>
+          <span id="mobileSettingsSummary" class="mobile-settings-summary">1〜100番・すべて</span>
+          <span class="mobile-settings-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="top-actions" id="topSettingsPanel">
+        <div class="control-row">
+          <label class="select-wrap range-wrap">範囲
+          <span class="range-controls">
+            <select id="rangeStart"></select>
+            <span class="range-sep">～</span>
+            <select id="rangeEnd"></select>
+            <span id="rangeCountLabel" class="range-count-label">（100首）</span>
+          </span>
+        </label>
+          <label class="select-wrap">出題数
+          <select id="questionCount"></select>
+        </label>
+        </div>
+        <div class="control-row">
+          <label class="select-wrap">順番
+          <select id="orderMode"><option value="number">番号順</option><option value="shuffle">シャッフル</option></select>
+        </label>
+          <label class="select-wrap">表記
+          <select id="scriptMode"><option value="original">原文</option><option value="kana">ひらがな</option></select>
+        </label>
+          <label class="select-wrap">出題対象
+          <select id="studyTarget">
+            <option value="all">すべて</option>
+            <option value="untried">未トライ</option>
+            <option value="good">○のみ</option>
+            <option value="review">要復習（△・×）</option>
+          </select>
+        </label>
+        </div>
+</div>
+    </header>
+
+    <main>
+      <section id="homeView" class="view active">
+        <div class="hero">
+          <p class="eyebrow" style="color:#80633A !important;">HYAKUNIN ISSHU MEMORY</p>
+          <h1>百人一首暗記帳</h1>
+          <p style="color:#31543B !important;" class="hero-description">決まり字ではなく、番号・歌人・上の句・下の句をまるごと覚えるための暗記帳です。</p>
+        </div>
+
+        <div class="primary-grid">
+          <button class="menu-card" id="listBtn">
+            <span class="menu-no">00</span><strong>百首一覧</strong><small>番号・歌人・歌の一部から検索</small>
+          </button>
+          <button class="menu-card featured" data-mode="upperLower">
+            <span class="menu-no">01</span><strong>上の句 → 下の句</strong><small>上の句から下の句を覚える</small>
+          </button>
+          <button class="menu-card" data-mode="lowerUpper">
+            <span class="menu-no">02</span><strong>下の句 → 上の句</strong><small>下の句から上の句を覚える</small>
+          </button>
+          <button class="menu-card" data-mode="poetFull">
+            <span class="menu-no">03</span><strong>歌人 → 全文</strong><small>歌人から番号と歌全文を覚える</small>
+          </button>
+          <button class="menu-card" data-mode="fullPoet">
+            <span class="menu-no">04</span><strong>全文 → 歌人</strong><small>歌全文から歌人を覚える</small>
+          </button>
+          <button class="menu-card" data-mode="numberFull">
+            <span class="menu-no">05</span><strong>番号 → 全文</strong><small>番号から歌人と歌全文を覚える</small>
+          </button>
+        </div>
+
+        <section class="mode-stats" aria-label="モード別学習状況">
+          <div class="mode-stat-card" data-stat-mode="upperLower">
+            <strong>01</strong><span>上の句 → 下の句</span>
+            <small><b class="s-good">○ 0</b><b class="s-maybe">△ 0</b><b class="s-bad">× 0</b><b class="s-none">未 100</b></small>
+          </div>
+          <div class="mode-stat-card" data-stat-mode="lowerUpper">
+            <strong>02</strong><span>下の句 → 上の句</span>
+            <small><b class="s-good">○ 0</b><b class="s-maybe">△ 0</b><b class="s-bad">× 0</b><b class="s-none">未 100</b></small>
+          </div>
+          <div class="mode-stat-card" data-stat-mode="poetFull">
+            <strong>03</strong><span>歌人 → 全文</span>
+            <small><b class="s-good">○ 0</b><b class="s-maybe">△ 0</b><b class="s-bad">× 0</b><b class="s-none">未 100</b></small>
+          </div>
+          <div class="mode-stat-card" data-stat-mode="fullPoet">
+            <strong>04</strong><span>全文 → 歌人</span>
+            <small><b class="s-good">○ 0</b><b class="s-maybe">△ 0</b><b class="s-bad">× 0</b><b class="s-none">未 100</b></small>
+          </div>
+          <div class="mode-stat-card" data-stat-mode="numberFull">
+            <strong>05</strong><span>番号 → 全文</span>
+            <small><b class="s-good">○ 0</b><b class="s-maybe">△ 0</b><b class="s-bad">× 0</b><b class="s-none">未 100</b></small>
+          </div>
+        </section>
+        <div class="results-reset-area">
+          <button type="button" id="resetResultsBtn" class="reset-results-btn">結果をリセット</button>
+        </div>
+      </section>
+
+      <section id="studyView" class="view">
+        <div class="study-head">
+          <button class="ghost" id="backHome">← ホーム</button>
+          <div class="progress-text"><span id="modeLabel"></span><strong id="progressLabel"></strong></div>
+        </div>
+        <div class="progress"><span id="progressBar"></span></div>
+
+        <article class="study-card">
+          <div class="prompt-label" id="promptLabel">問題</div>
+          <div class="prompt" id="prompt"></div>
+          <button class="reveal" id="revealBtn">答えを見る</button>
+
+          <div class="answer" id="answer" hidden>
+            <div class="answer-meta"><span id="answerNumber"></span><span id="answerPoet"></span></div>
+            <div class="poem-lines"><p id="answerUpper"></p><p id="answerLower"></p></div>
+            <div class="rating-label">正解できましたか？</div>
+            <div class="rating-buttons">
+              <button data-rating="good" class="rate good">○<span>覚えていた</span></button>
+              <button data-rating="maybe" class="rate maybe">△<span>あやふや</span></button>
+              <button data-rating="bad" class="rate bad">×<span>出なかった</span></button>
+            </div>
+          </div>
+        </article>
+
+        <div class="session-summary" id="sessionSummary" hidden>
+          <h2>今回の結果</h2>
+          <div class="summary-numbers">
+            <div><strong id="sumGood">0</strong><span>○</span></div>
+            <div><strong id="sumMaybe">0</strong><span>△</span></div>
+            <div><strong id="sumBad">0</strong><span>×</span></div>
+          </div>
+          <div id="missedList" class="missed-list"></div>
+          <button class="reveal" id="finishHome">ホームへ戻る</button>
+        </div>
+      </section>
+
+      <section id="listView" class="view">
+        <div class="list-head">
+          <button class="ghost" id="backFromList">← ホーム</button>
+          <h2>百首一覧</h2>
+          <div class="list-search-row">
+            <input id="searchInput" type="search" placeholder="番号・歌人・歌の一部を検索" autocomplete="off" />
+            <select id="listSort" aria-label="並べ替え">
+              <option value="numberAsc">番号順</option>
+              <option value="numberDesc">番号逆順</option>
+              <option value="upperLower">01 要復習優先</option>
+              <option value="lowerUpper">02 要復習優先</option>
+              <option value="poetFull">03 要復習優先</option>
+              <option value="fullPoet">04 要復習優先</option>
+              <option value="numberFull">05 要復習優先</option>
+            </select>
+          </div>
+          <div class="list-filter-row">
+            <span>成績で絞り込み</span>
+            <select id="listFilterMode" aria-label="絞り込みモード">
+              <option value="upperLower">01 上→下</option>
+              <option value="lowerUpper">02 下→上</option>
+              <option value="poetFull">03 歌人→全文</option>
+              <option value="fullPoet">04 全文→歌人</option>
+              <option value="numberFull">05 番号→全文</option>
+            </select>
+            <select id="listFilterRating" aria-label="成績">
+              <option value="all">すべて</option>
+              <option value="good">○</option>
+              <option value="maybe">△</option>
+              <option value="bad">×</option>
+              <option value="review">△・×</option>
+              <option value="none">未回答</option>
+            </select>
+            <button type="button" id="excelExportBtn" class="excel-export">Excel出力</button>
+          </div>
+        </div>
+        <div class="poem-list-header" aria-hidden="true">
+          <span>番号</span><span>歌人</span><span>歌</span>
+          <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+        </div>
+        <div id="poemList" class="poem-list"></div>
+      </section>
+    </main>
+
+    <footer>小倉百人一首 暗記学習用ウェブサイト　／　<button type="button" id="aboutBtn" class="footer-link">このサイトの使用上の注意事項について</button></footer>
+  </div>
+  <div id="resetModal" class="about-modal" hidden aria-hidden="true">
+  <div class="about-backdrop" data-close-reset></div>
+  <section class="about-dialog reset-dialog" role="dialog" aria-modal="true" aria-labelledby="resetTitle">
+    <button type="button" class="about-close" id="resetClose" aria-label="閉じる">×</button>
+    <p class="about-eyebrow">RESET</p>
+    <h2 id="resetTitle">学習結果をリセットしますか？</h2>
+    <p>01〜05の○△×の記録と、百首一覧に表示される成績をすべて消去します。この操作は元に戻せません。</p>
+    <div class="reset-actions">
+      <button type="button" class="ghost" id="resetCancel">キャンセル</button>
+      <button type="button" class="reset-confirm" id="resetConfirm">すべてリセット</button>
+    </div>
+  </section>
+</div>
+
+<div id="aboutModal" class="about-modal" hidden aria-hidden="true">
+  <div class="about-backdrop" data-close-about></div>
+  <section class="about-dialog" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+    <button type="button" class="about-close" id="aboutClose" aria-label="閉じる">×</button>
+    <p class="about-eyebrow">ABOUT</p>
+    <h2 id="aboutTitle">このサイトの使用上の注意事項について</h2>
+
+    <p>「百首帳」は、小倉百人一首を覚えるために個人で制作した学習用ウェブサイトです。</p>
+
+    <p>掲載内容についてはできる限り正確を期していますが、和歌・歌人名・仮名遣い等の表記には、底本や資料によって異同がある場合があります。また、掲載内容の完全性・正確性を保証するものではありません。</p>
+
+    <p>本サイトの利用によって生じた損害・不利益等について、制作者は責任を負いかねますので、あらかじめご了承ください。</p>
+
+    <p>学習履歴などのデータは、お使いのブラウザ内に保存されます。本サイトでは、学習履歴や個人情報を独自に収集・送信する機能は設けていません。</p>
+
+    <p>本サイトは個人による非公式の学習用ツールであり、特定の団体・出版社等とは関係ありません。</p>
+  </section>
+</div>
+
+<button type="button" id="backToTopBtn" class="back-to-top" aria-label="ページ上部へ戻る">
+  <span aria-hidden="true">↑</span><span class="back-to-top-label">上へ</span>
+</button>
+
+<script>
+window.POEMS = [
+  {
+    "number": 1,
+    "poet": "天智天皇",
+    "poetKana": "てんじてんのう",
+    "upper": "秋の田のかりほの庵の苫をあらみ",
+    "lower": "わが衣手は露にぬれつつ",
+    "upperKana": "あきのたのかりほのいほのとまをあらみ",
+    "lowerKana": "わがころもではつゆにぬれつつ"
+  },
+  {
+    "number": 2,
+    "poet": "持統天皇",
+    "poetKana": "じとうてんのう",
+    "upper": "春過ぎて夏来にけらし白妙の",
+    "lower": "衣干すてふ天の香具山",
+    "upperKana": "はるすぎてなつきにけらししろたへの",
+    "lowerKana": "ころもほすてふあまのかぐやま"
+  },
+  {
+    "number": 3,
+    "poet": "柿本人麻呂",
+    "poetKana": "かきのもとのひとまろ",
+    "upper": "あしびきの山鳥の尾のしだり尾の",
+    "lower": "ながながし夜をひとりかも寝む",
+    "upperKana": "あしびきのやまどりのをのしだりをの",
+    "lowerKana": "ながながしよをひとりかもねむ"
+  },
+  {
+    "number": 4,
+    "poet": "山辺赤人",
+    "poetKana": "やまべのあかひと",
+    "upper": "田子の浦にうち出でてみれば白妙の",
+    "lower": "富士の高嶺に雪は降りつつ",
+    "upperKana": "たごのうらにうちいでてみればしろたへの",
+    "lowerKana": "ふじのたかねにゆきはふりつつ"
+  },
+  {
+    "number": 5,
+    "poet": "猿丸大夫",
+    "poetKana": "さるまるだゆう",
+    "upper": "奥山に紅葉踏み分け鳴く鹿の",
+    "lower": "声聞く時ぞ秋は悲しき",
+    "upperKana": "おくやまにもみぢふみわけなくしかの",
+    "lowerKana": "こゑきくときぞあきはかなしき"
+  },
+  {
+    "number": 6,
+    "poet": "中納言家持",
+    "poetKana": "ちゅうなごんやかもち",
+    "upper": "かささぎの渡せる橋に置く霜の",
+    "lower": "白きを見れば夜ぞ更けにける",
+    "upperKana": "かささぎのわたせるはしにおくしもの",
+    "lowerKana": "しろきをみればよぞふけにける"
+  },
+  {
+    "number": 7,
+    "poet": "安倍仲麻呂",
+    "poetKana": "あべのなかまろ",
+    "upper": "天の原ふりさけみれば春日なる",
+    "lower": "三笠の山に出でし月かも",
+    "upperKana": "あまのはらふりさけみればかすがなる",
+    "lowerKana": "みかさのやまにいでしつきかも"
+  },
+  {
+    "number": 8,
+    "poet": "喜撰法師",
+    "poetKana": "きせんほうし",
+    "upper": "わが庵は都の辰巳しかぞ住む",
+    "lower": "世をうぢ山と人はいふなり",
+    "upperKana": "わがいほはみやこのたつみしかぞすむ",
+    "lowerKana": "よをうぢやまとひとはいふなり"
+  },
+  {
+    "number": 9,
+    "poet": "小野小町",
+    "poetKana": "おののこまち",
+    "upper": "花の色は移りにけりないたづらに",
+    "lower": "わが身世にふるながめせしまに",
+    "upperKana": "はなのいろはうつりにけりないたづらに",
+    "lowerKana": "わがみよにふるながめせしまに"
+  },
+  {
+    "number": 10,
+    "poet": "蝉丸",
+    "poetKana": "せみまる",
+    "upper": "これやこの行くも帰るも別れては",
+    "lower": "知るも知らぬも逢坂の関",
+    "upperKana": "これやこのゆくもかへるもわかれては",
+    "lowerKana": "しるもしらぬもあふさかのせき"
+  },
+  {
+    "number": 11,
+    "poet": "参議篁",
+    "poetKana": "さんぎたかむら",
+    "upper": "わたの原八十島かけて漕ぎ出でぬと",
+    "lower": "人にはつげよ海人の釣船",
+    "upperKana": "わたのはらやそしまかけてこぎいでぬと",
+    "lowerKana": "ひとにはつげよあまのつりぶね"
+  },
+  {
+    "number": 12,
+    "poet": "僧正遍昭",
+    "poetKana": "そうじょうへんじょう",
+    "upper": "天つ風雲の通ひ路吹きとぢよ",
+    "lower": "乙女の姿しばしとどめむ",
+    "upperKana": "あまつかぜくものかよひぢふきとぢよ",
+    "lowerKana": "をとめのすがたしばしとどめむ"
+  },
+  {
+    "number": 13,
+    "poet": "陽成院",
+    "poetKana": "ようぜいいん",
+    "upper": "筑波嶺の峰より落つるみなの川",
+    "lower": "恋ぞつもりて淵となりぬる",
+    "upperKana": "つくばねのみねよりおつるみなのがは",
+    "lowerKana": "こひぞつもりてふちとなりぬる"
+  },
+  {
+    "number": 14,
+    "poet": "河原左大臣",
+    "poetKana": "かわらのさだいじん",
+    "upper": "陸奥のしのぶもぢずりたれゆえに",
+    "lower": "乱れそめにしわれならなくに",
+    "upperKana": "みちのくのしのぶもぢずりたれゆゑに",
+    "lowerKana": "みだれそめにしわれならなくに"
+  },
+  {
+    "number": 15,
+    "poet": "光孝天皇",
+    "poetKana": "こうこうてんのう",
+    "upper": "君がため春の野に出でて若菜摘む",
+    "lower": "わが衣手に雪は降りつつ",
+    "upperKana": "きみがためはるののにいでてわかなつむ",
+    "lowerKana": "わがころもでにゆきはふりつつ"
+  },
+  {
+    "number": 16,
+    "poet": "中納言行平",
+    "poetKana": "ちゅうなごんゆきひら",
+    "upper": "立ち別れいなばの山の峰に生ふる",
+    "lower": "まつとし聞かば今帰り来む",
+    "upperKana": "たちわかれいなばのやまのみねにおふる",
+    "lowerKana": "まつとしきかばいまかへりこむ"
+  },
+  {
+    "number": 17,
+    "poet": "在原業平朝臣",
+    "poetKana": "ありわらのなりひらあそん",
+    "upper": "ちはやぶる神代も聞かず竜田川",
+    "lower": "から紅に水くくるとは",
+    "upperKana": "ちはやぶるかみよもきかずたつたがは",
+    "lowerKana": "からくれなゐにみづくくるとは"
+  },
+  {
+    "number": 18,
+    "poet": "藤原敏行朝臣",
+    "poetKana": "ふじわらのとしゆきあそん",
+    "upper": "住の江の岸に寄る波よるさへや",
+    "lower": "夢の通ひ路人目よくらむ",
+    "upperKana": "すみのえのきしによるなみよるさへや",
+    "lowerKana": "ゆめのかよひぢひとめよくらむ"
+  },
+  {
+    "number": 19,
+    "poet": "伊勢",
+    "poetKana": "いせ",
+    "upper": "難波潟短き葦のふしの間も",
+    "lower": "逢はでこの世を過ぐしてよとや",
+    "upperKana": "なにはがたみじかきあしのふしのまも",
+    "lowerKana": "あはでこのよをすぐしてよとや"
+  },
+  {
+    "number": 20,
+    "poet": "元良親王",
+    "poetKana": "もとよししんのう",
+    "upper": "わびぬれば今はた同じ難波なる",
+    "lower": "身をつくしても逢はむとぞ思ふ",
+    "upperKana": "わびぬればいまはたおなじなにはなる",
+    "lowerKana": "みをつくしてもあはむとぞおもふ"
+  },
+  {
+    "number": 21,
+    "poet": "素性法師",
+    "poetKana": "そせいほうし",
+    "upper": "今来むといひしばかりに長月の",
+    "lower": "有明の月を待ち出でつるかな",
+    "upperKana": "いまこむといひしばかりにながつきの",
+    "lowerKana": "ありあけのつきをまちいでつるかな"
+  },
+  {
+    "number": 22,
+    "poet": "文屋康秀",
+    "poetKana": "ふんやのやすひで",
+    "upper": "吹くからに秋の草木のしをるれば",
+    "lower": "むべ山風を嵐といふらむ",
+    "upperKana": "ふくからにあきのくさきのしをるれば",
+    "lowerKana": "むべやまかぜをあらしといふらむ"
+  },
+  {
+    "number": 23,
+    "poet": "大江千里",
+    "poetKana": "おおえのちさと",
+    "upper": "月見れば千々にものこそ悲しけれ",
+    "lower": "わが身ひとつの秋にはあらねど",
+    "upperKana": "つきみればちぢにものこそかなしけれ",
+    "lowerKana": "わがみひとつのあきにはあらねど"
+  },
+  {
+    "number": 24,
+    "poet": "菅家",
+    "poetKana": "かんけ",
+    "upper": "このたびは幣もとりあへず手向山",
+    "lower": "紅葉の錦神のまにまに",
+    "upperKana": "このたびはぬさもとりあへずたむけやま",
+    "lowerKana": "もみぢのにしきかみのまにまに"
+  },
+  {
+    "number": 25,
+    "poet": "三条右大臣",
+    "poetKana": "さんじょうのうだいじん",
+    "upper": "名にし負はば逢坂山のさねかずら",
+    "lower": "人に知られでくるよしもがな",
+    "upperKana": "なにしおはばあふさかやまのさねかづら",
+    "lowerKana": "ひとにしられでくるよしもがな"
+  },
+  {
+    "number": 26,
+    "poet": "貞信公",
+    "poetKana": "ていしんこう",
+    "upper": "小倉山峰のもみぢ葉心あらば",
+    "lower": "今ひとたびのみゆき待たなむ",
+    "upperKana": "をぐらやまみねのもみぢばこころあらば",
+    "lowerKana": "いまひとたびのみゆきまたなむ"
+  },
+  {
+    "number": 27,
+    "poet": "中納言兼輔",
+    "poetKana": "ちゅうなごんかねすけ",
+    "upper": "みかの原わきて流るる泉川",
+    "lower": "いつ見きとてか恋しかるらむ",
+    "upperKana": "みかのはらわきてながるるいづみがは",
+    "lowerKana": "いつみきとてかこひしかるらむ"
+  },
+  {
+    "number": 28,
+    "poet": "源宗于朝臣",
+    "poetKana": "みなもとのむねゆきあそん",
+    "upper": "山里は冬ぞ寂しさまさりける",
+    "lower": "人目も草もかれぬと思へば",
+    "upperKana": "やまざとはふゆぞさびしさまさりける",
+    "lowerKana": "ひとめもくさもかれぬとおもへば"
+  },
+  {
+    "number": 29,
+    "poet": "凡河内躬恒",
+    "poetKana": "おおしこうちのみつね",
+    "upper": "心あてに折らばや折らむ初霜の",
+    "lower": "置きまどはせる白菊の花",
+    "upperKana": "こころあてにをらばやをらむはつしもの",
+    "lowerKana": "おきまどはせるしらぎくのはな"
+  },
+  {
+    "number": 30,
+    "poet": "壬生忠岑",
+    "poetKana": "みぶのただみね",
+    "upper": "有明のつれなく見えし別れより",
+    "lower": "暁ばかり憂きものはなし",
+    "upperKana": "ありあけのつれなくみえしわかれより",
+    "lowerKana": "あかつきばかりうきものはなし"
+  },
+  {
+    "number": 31,
+    "poet": "坂上是則",
+    "poetKana": "さかのうえのこれのり",
+    "upper": "朝ぼらけ有明の月と見るまでに",
+    "lower": "吉野の里に降れる白雪",
+    "upperKana": "あさぼらけありあけのつきとみるまでに",
+    "lowerKana": " よしののさとに ふれるしらゆき"
+  },
+  {
+    "number": 32,
+    "poet": "春道列樹",
+    "poetKana": "はるみちのつらき",
+    "upper": "山川に風のかけたるしがらみは",
+    "lower": "流れもあへぬ紅葉なりけり",
+    "upperKana": "やまがはにかぜのかけたるしがらみは",
+    "lowerKana": "ながれもあへぬもみぢなりけり"
+  },
+  {
+    "number": 33,
+    "poet": "紀友則",
+    "poetKana": "きのとものり",
+    "upper": "ひさかたの光のどけき春の日に",
+    "lower": "しづ心なく花の散るらむ",
+    "upperKana": "ひさかたのひかりのどけきはるのひに",
+    "lowerKana": "しづこころなくはなのちるらむ"
+  },
+  {
+    "number": 34,
+    "poet": "藤原興風",
+    "poetKana": "ふじわらのおきかぜ",
+    "upper": "誰をかも知る人にせむ高砂の",
+    "lower": "松も昔の友ならなくに",
+    "upperKana": "たれをかもしるひとにせむたかさごの",
+    "lowerKana": "まつもむかしのともならなくに"
+  },
+  {
+    "number": 35,
+    "poet": "紀貫之",
+    "poetKana": "きのつらゆき",
+    "upper": "人はいさ心も知らずふるさとは",
+    "lower": "花ぞ昔の香に匂ひける",
+    "upperKana": "ひとはいさこころもしらずふるさとは",
+    "lowerKana": "はなぞむかしのかににほひける"
+  },
+  {
+    "number": 36,
+    "poet": "清原深養父",
+    "poetKana": "きよはらのふかやぶ",
+    "upper": "夏の夜はまだ宵ながら明けぬるを",
+    "lower": "雲のいずこに月宿るらむ",
+    "upperKana": "なつのよはまだよひながらあけぬるを",
+    "lowerKana": "くものいづこにつきやどるらむ"
+  },
+  {
+    "number": 37,
+    "poet": "文屋朝康",
+    "poetKana": "ふんやのあさやす",
+    "upper": "白露に風の吹きしく秋の野は",
+    "lower": "つらぬきとめぬ玉ぞ散りける",
+    "upperKana": "しらつゆにかぜのふきしくあきののは",
+    "lowerKana": "つらぬきとめぬたまぞちりける"
+  },
+  {
+    "number": 38,
+    "poet": "右近",
+    "poetKana": "うこん",
+    "upper": "忘らるる身をば思はず誓ひてし",
+    "lower": "人の命の惜しくもあるかな",
+    "upperKana": "わすらるるみをばおもはずちかひてし",
+    "lowerKana": "ひとのいのちのをしくもあるかな"
+  },
+  {
+    "number": 39,
+    "poet": "参議等",
+    "poetKana": "さんぎひとし",
+    "upper": "浅茅生の小野の篠原忍ぶれど",
+    "lower": "あまりてなどか人の恋しき",
+    "upperKana": "あさぢふのをののしのはらしのぶれど",
+    "lowerKana": "あまりてなどかひとのこひしき"
+  },
+  {
+    "number": 40,
+    "poet": "平兼盛",
+    "poetKana": "たいらのかねもり",
+    "upper": "忍ぶれど色に出でにけりわが恋は",
+    "lower": "ものや思ふと人の問ふまで",
+    "upperKana": "しのぶれどいろにいでにけりわがこひは",
+    "lowerKana": "ものやおもふとひとのとふまで"
+  },
+  {
+    "number": 41,
+    "poet": "壬生忠見",
+    "poetKana": "みぶのただみ",
+    "upper": "恋すてふわが名はまだき立ちにけり",
+    "lower": "人知れずこそ思ひそめしか",
+    "upperKana": "こひすてふわがなはまだきたちにけり",
+    "lowerKana": "ひとしれずこそおもひそめしか"
+  },
+  {
+    "number": 42,
+    "poet": "清原元輔",
+    "poetKana": "きよはらのもとすけ",
+    "upper": "契りきなかたみに袖をしぼりつつ",
+    "lower": "末の松山波越さじとは",
+    "upperKana": "ちぎりきなかたみにそでをしぼりつつ",
+    "lowerKana": "すゑのまつやまなみこさじとは"
+  },
+  {
+    "number": 43,
+    "poet": "権中納言敦忠",
+    "poetKana": "ごんちゅうなごんあつただ",
+    "upper": "逢ひ見ての後の心にくらぶれば",
+    "lower": "昔はものを思はざりけり",
+    "upperKana": "あひみてののちのこころにくらぶれば",
+    "lowerKana": "むかしはものをおもはざりけり"
+  },
+  {
+    "number": 44,
+    "poet": "中納言朝忠",
+    "poetKana": "ちゅうなごんあさただ",
+    "upper": "逢ふことの絶えてしなくはなかなかに",
+    "lower": "人をも身をも恨みざらまし",
+    "upperKana": "あふことのたえてしなくはなかなかに",
+    "lowerKana": "ひとをもみをもうらみざらまし"
+  },
+  {
+    "number": 45,
+    "poet": "謙徳公",
+    "poetKana": "けんとくこう",
+    "upper": "あはれともいふべき人は思ほえで",
+    "lower": "身のいたずらになりぬべきかな",
+    "upperKana": "あはれともいふべきひとはおもほえで",
+    "lowerKana": "みのいたづらになりぬべきかな"
+  },
+  {
+    "number": 46,
+    "poet": "曾禰好忠",
+    "poetKana": "そねのよしただ",
+    "upper": "由良の戸を渡る舟人かぢをたえ",
+    "lower": "ゆくへも知らぬ恋の道かな",
+    "upperKana": "ゆらのとをわたるふなびとかぢをたえ",
+    "lowerKana": "ゆくへもしらぬこひのみちかな"
+  },
+  {
+    "number": 47,
+    "poet": "恵慶法師",
+    "poetKana": "えげいほうし",
+    "upper": "八重むぐら茂れる宿のさびしきに",
+    "lower": "人こそ見えね秋は来にけり",
+    "upperKana": "やへむぐらしげれるやどのさびしきに",
+    "lowerKana": "ひとこそみえねあきはきにけり"
+  },
+  {
+    "number": 48,
+    "poet": "源重之",
+    "poetKana": "みなもとのしげゆき",
+    "upper": "風をいたみ岩うつ波のおのれのみ",
+    "lower": "くだけてものを思ふころかな",
+    "upperKana": "かぜをいたみいはうつなみのおのれのみ",
+    "lowerKana": "くだけてものをおもふころかな"
+  },
+  {
+    "number": 49,
+    "poet": "大中臣能宣",
+    "poetKana": "おおなかとみのよしのぶ",
+    "upper": "御垣守衛士のたく火の夜は燃え",
+    "lower": "昼は消えつつものをこそ思へ",
+    "upperKana": "みかきもりゑじのたくひのよるはもえ",
+    "lowerKana": "ひるはきえつつものをこそおもへ"
+  },
+  {
+    "number": 50,
+    "poet": "藤原義孝",
+    "poetKana": "ふじわらのよしたか",
+    "upper": "君がため惜しからざりし命さへ",
+    "lower": "長くもがなと思ひけるかな",
+    "upperKana": "きみがためをしからざりしいのちさへ",
+    "lowerKana": "ながくもがなとおもひけるかな"
+  },
+  {
+    "number": 51,
+    "poet": "藤原実方朝臣",
+    "poetKana": "ふじわらのさねかたあそん",
+    "upper": "かくとだにえやはいぶきのさしも草",
+    "lower": "さしも知らじな燃ゆる思ひを",
+    "upperKana": "かくとだにえやはいぶきのさしもぐさ",
+    "lowerKana": "さしもしらじなもゆるおもひを"
+  },
+  {
+    "number": 52,
+    "poet": "藤原道信朝臣",
+    "poetKana": "ふじわらのみちのぶあそん",
+    "upper": "明けぬれば暮るるものとは知りながら",
+    "lower": "なほ恨めしき朝ぼらけかな",
+    "upperKana": "あけぬればくるるものとはしりながら",
+    "lowerKana": "なほうらめしきあさぼらけかな"
+  },
+  {
+    "number": 53,
+    "poet": "右大将道綱母",
+    "poetKana": "うだいしょうみちつなのはは",
+    "upper": "嘆きつつひとり寝る夜の明くる間は",
+    "lower": "いかに久しきものとかは知る",
+    "upperKana": "なげきつつひとりぬるよのあくるまは",
+    "lowerKana": "いかにひさしきものとかはしる"
+  },
+  {
+    "number": 54,
+    "poet": "儀同三司母",
+    "poetKana": "ぎどうさんしのはは",
+    "upper": "忘れじの行く末まではかたければ",
+    "lower": "今日をかぎりの命ともがな",
+    "upperKana": "わすれじのゆくすゑまではかたければ",
+    "lowerKana": "けふをかぎりのいのちともがな"
+  },
+  {
+    "number": 55,
+    "poet": "大納言公任",
+    "poetKana": "だいなごんきんとう",
+    "upper": "滝の音は絶えて久しくなりぬれど",
+    "lower": "名こそ流れてなほ聞こえけれ",
+    "upperKana": "たきのおとはたえてひさしくなりぬれど",
+    "lowerKana": "なこそながれてなほきこえけれ"
+  },
+  {
+    "number": 56,
+    "poet": "和泉式部",
+    "poetKana": "いずみしきぶ",
+    "upper": "あらざらむこの世のほかの思ひ出に",
+    "lower": "今ひとたびの逢ふこともがな",
+    "upperKana": "あらざらむこのよのほかのおもひでに",
+    "lowerKana": "いまひとたびのあふこともがな"
+  },
+  {
+    "number": 57,
+    "poet": "紫式部",
+    "poetKana": "むらさきしきぶ",
+    "upper": "めぐり逢ひて見しやそれとも分かぬ間に",
+    "lower": "雲隠れにし夜半の月かな",
+    "upperKana": "めぐりあひてみしやそれともわかぬまに",
+    "lowerKana": "くもがくれにしよはのつきかな"
+  },
+  {
+    "number": 58,
+    "poet": "大弐三位",
+    "poetKana": "だいにのさんみ",
+    "upper": "有馬山猪名の笹原風吹けば",
+    "lower": "いでそよ人を忘れやはする",
+    "upperKana": "ありまやまゐなのささはらかぜふけば",
+    "lowerKana": "いでそよひとをわすれやはする"
+  },
+  {
+    "number": 59,
+    "poet": "赤染衛門",
+    "poetKana": "あかぞめえもん",
+    "upper": "やすらはで寝なましものを小夜更けて",
+    "lower": "かたぶくまでの月を見しかな",
+    "upperKana": "やすらはでねなましものをさよふけて",
+    "lowerKana": "かたぶくまでのつきをみしかな"
+  },
+  {
+    "number": 60,
+    "poet": "小式部内侍",
+    "poetKana": "こしきぶのないし",
+    "upper": "大江山いく野の道の遠ければ",
+    "lower": "まだふみも見ず天の橋立",
+    "upperKana": "おほえやまいくののみちのとほければ",
+    "lowerKana": "まだふみもみずあまのはしだて"
+  },
+  {
+    "number": 61,
+    "poet": "伊勢大輔",
+    "poetKana": "いせのたいふ",
+    "upper": "いにしへの奈良の都の八重桜",
+    "lower": "けふ九重に匂ひぬるかな",
+    "upperKana": "いにしへのならのみやこのやへざくら",
+    "lowerKana": "けふここのへににほひぬるかな"
+  },
+  {
+    "number": 62,
+    "poet": "清少納言",
+    "poetKana": "せいしょうなごん",
+    "upper": "夜をこめて鳥のそら音ははかるとも",
+    "lower": "よに逢坂の関はゆるさじ",
+    "upperKana": "よをこめてとりのそらねははかるとも",
+    "lowerKana": "よにあふさかのせきはゆるさじ"
+  },
+  {
+    "number": 63,
+    "poet": "左京大夫道雅",
+    "poetKana": "さきょうのだいぶみちまさ",
+    "upper": "今はただ思ひ絶えなむとばかりを",
+    "lower": "人づてならでいふよしもがな",
+    "upperKana": "いまはただおもひたえなむとばかりを",
+    "lowerKana": "ひとづてならでいふよしもがな"
+  },
+  {
+    "number": 64,
+    "poet": "権中納言定頼",
+    "poetKana": "ごんちゅうなごんさだより",
+    "upper": "朝ぼらけ宇治の川霧たえだえに",
+    "lower": "あらはれわたる瀬々の網代木",
+    "upperKana": "あさぼらけうぢのかはぎりたえだえに",
+    "lowerKana": "あらはれわたるせぜのあじろぎ"
+  },
+  {
+    "number": 65,
+    "poet": "相模",
+    "poetKana": "さがみ",
+    "upper": "恨みわび干さぬ袖だにあるものを",
+    "lower": "恋に朽ちなむ名こそ惜しけれ",
+    "upperKana": "うらみわびほさぬそでだにあるものを",
+    "lowerKana": "こひにくちなむなこそをしけれ"
+  },
+  {
+    "number": 66,
+    "poet": "前大僧正行尊",
+    "poetKana": "さきのだいそうじょうぎょうそん",
+    "upper": "もろともにあはれと思え山桜",
+    "lower": "花よりほかに知る人もなし",
+    "upperKana": "もろともにあはれとおもへやまざくら",
+    "lowerKana": "はなよりほかにしるひともなし"
+  },
+  {
+    "number": 67,
+    "poet": "周防内侍",
+    "poetKana": "すおうのないし",
+    "upper": "春の夜の夢ばかりなる手枕に",
+    "lower": "かひなく立たむ名こそ惜しけれ",
+    "upperKana": "はるのよのゆめばかりなるたまくらに",
+    "lowerKana": "かひなくたたむなこそをしけれ"
+  },
+  {
+    "number": 68,
+    "poet": "三条院",
+    "poetKana": "さんじょういん",
+    "upper": "心にもあらで憂き夜にながらへば",
+    "lower": "恋しかるべき夜半の月かな",
+    "upperKana": "こころにもあらでうきよにながらへば",
+    "lowerKana": "こひしかるべきよはのつきかな"
+  },
+  {
+    "number": 69,
+    "poet": "能因法師",
+    "poetKana": "のういんほうし",
+    "upper": "嵐ふく三室の山のもみぢ葉は",
+    "lower": "竜田の川の錦なりけり",
+    "upperKana": "あらしふくみむろのやまのもみぢばは",
+    "lowerKana": "たつたのかはのにしきなりけり"
+  },
+  {
+    "number": 70,
+    "poet": "良暹法師",
+    "poetKana": "りょうぜんほうし",
+    "upper": "寂しさに宿を立ち出でてながむれば",
+    "lower": "いづこも同じ秋の夕暮れ",
+    "upperKana": "さびしさにやどをたちいでてながむれば",
+    "lowerKana": "いづこもおなじあきのゆふぐれ"
+  },
+  {
+    "number": 71,
+    "poet": "大納言経信",
+    "poetKana": "だいなごんつねのぶ",
+    "upper": "夕されば門田の稲葉おとづれて",
+    "lower": "葦のまろやに秋風ぞ吹く",
+    "upperKana": "ゆふさればかどたのいなばおとづれて",
+    "lowerKana": "あしのまろやにあきかぜぞふく"
+  },
+  {
+    "number": 72,
+    "poet": "祐子内親王家紀伊",
+    "poetKana": "ゆうしないしんのうけのきい",
+    "upper": "音に聞く高師の浜のあだ波は",
+    "lower": "かけじや袖のぬれもこそすれ",
+    "upperKana": "おとにきくたかしのはまのあだなみは",
+    "lowerKana": "かけじやそでのぬれもこそすれ"
+  },
+  {
+    "number": 73,
+    "poet": "権中納言匡房",
+    "poetKana": "ごんちゅうなごんまさふさ",
+    "upper": "高砂の尾の上の桜咲きにけり",
+    "lower": "外山の霞立たずもあらなむ",
+    "upperKana": "たかさごのをのへのさくらさきにけり",
+    "lowerKana": "とやまのかすみたたずもあらなむ"
+  },
+  {
+    "number": 74,
+    "poet": "源俊頼朝臣",
+    "poetKana": "みなもとのとしよりあそん",
+    "upper": "憂かりける人を初瀬の山おろしよ",
+    "lower": "はげしかれとは祈らぬものを",
+    "upperKana": "うかりけるひとをはつせのやまおろしよ",
+    "lowerKana": "はげしかれとはいのらぬものを"
+  },
+  {
+    "number": 75,
+    "poet": "藤原基俊",
+    "poetKana": "ふじわらのもととし",
+    "upper": "契りおきしさせもが露を命にて",
+    "lower": "あはれ今年の秋もいぬめり",
+    "upperKana": "ちぎりおきしさせもがつゆをいのちにて",
+    "lowerKana": "あはれことしのあきもいぬめり"
+  },
+  {
+    "number": 76,
+    "poet": "法性寺入道前関白太政大臣",
+    "poetKana": "ほっしょうじにゅうどうさきのかんぱくだじょうだいじん",
+    "upper": "わたの原漕ぎ出でて見ればひさかたの",
+    "lower": "雲居にまがふ沖つ白波",
+    "upperKana": "わたのはらこぎいでてみればひさかたの",
+    "lowerKana": "くもゐにまがふおきつしらなみ"
+  },
+  {
+    "number": 77,
+    "poet": "崇徳院",
+    "poetKana": "すとくいん",
+    "upper": "瀬をはやみ岩にせかるる滝川の",
+    "lower": "われても末に逢はむとぞ思ふ",
+    "upperKana": "せをはやみいはにせかるるたきがはの",
+    "lowerKana": "われてもすゑにあはむとぞおもふ"
+  },
+  {
+    "number": 78,
+    "poet": "源兼昌",
+    "poetKana": "みなもとのかねまさ",
+    "upper": "淡路島通ふ千鳥の鳴く声に",
+    "lower": "いく夜寝覚めぬ須磨の関守",
+    "upperKana": "あはぢしまかよふちどりのなくこゑに",
+    "lowerKana": "いくよねざめぬすまのせきもり"
+  },
+  {
+    "number": 79,
+    "poet": "左京大夫顕輔",
+    "poetKana": "さきょうのだいぶあきすけ",
+    "upper": "秋風にたなびく雲のたえ間より",
+    "lower": "もれ出づる月の影のさやけさ",
+    "upperKana": "あきかぜにたなびくくものたえまより",
+    "lowerKana": "もれいづるつきのかげのさやけさ"
+  },
+  {
+    "number": 80,
+    "poet": "待賢門院堀河",
+    "poetKana": "たいけんもんいんのほりかわ",
+    "upper": "ながからむ心も知らず黒髪の",
+    "lower": "乱れてけさはものをこそ思へ",
+    "upperKana": "ながからむこころもしらずくろかみの",
+    "lowerKana": "みだれてけさはものをこそおもへ"
+  },
+  {
+    "number": 81,
+    "poet": "後徳大寺左大臣",
+    "poetKana": "ごとくだいじのさだいじん",
+    "upper": "ほととぎす鳴きつる方をながむれば",
+    "lower": "ただ有明の月ぞ残れる",
+    "upperKana": "ほととぎすなきつるかたをながむれば",
+    "lowerKana": "ただありあけのつきぞのこれる"
+  },
+  {
+    "number": 82,
+    "poet": "道因法師",
+    "poetKana": "どういんほうし",
+    "upper": "思ひわびさても命はあるものを",
+    "lower": "憂きに堪へぬは涙なりけり",
+    "upperKana": "おもひわびさてもいのちはあるものを",
+    "lowerKana": "うきにたへぬはなみだなりけり"
+  },
+  {
+    "number": 83,
+    "poet": "皇太后宮大夫俊成",
+    "poetKana": "こうたいごうぐうだいぶとしなり",
+    "upper": "世の中よ道こそなけれ思ひ入る",
+    "lower": "山の奥にも鹿ぞ鳴くなる",
+    "upperKana": "よのなかよみちこそなけれおもひいる",
+    "lowerKana": "やまのおくにもしかぞなくなる"
+  },
+  {
+    "number": 84,
+    "poet": "藤原清輔朝臣",
+    "poetKana": "ふじわらのきよすけあそん",
+    "upper": "ながらへばまたこのごろやしのばれむ",
+    "lower": "憂しと見し世ぞ今は恋しき",
+    "upperKana": "ながらへばまたこのごろやしのばれむ",
+    "lowerKana": "うしとみしよぞいまはこひしき"
+  },
+  {
+    "number": 85,
+    "poet": "俊恵法師",
+    "poetKana": "しゅんえほうし",
+    "upper": "夜もすがらもの思ふころは明けやらで",
+    "lower": "ねやのひまさへつれなかりけり",
+    "upperKana": "よもすがらものおもふころはあけやらで",
+    "lowerKana": "ねやのひまさへつれなかりけり"
+  },
+  {
+    "number": 86,
+    "poet": "西行法師",
+    "poetKana": "さいぎょうほうし",
+    "upper": "嘆けとて月やはものを思はする",
+    "lower": "かこち顔なるわが涙かな",
+    "upperKana": "なげけとてつきやはものをおもはする",
+    "lowerKana": "かこちがほなるわがなみだかな"
+  },
+  {
+    "number": 87,
+    "poet": "寂蓮法師",
+    "poetKana": "じゃくれんほうし",
+    "upper": "村雨の露もまだ干ぬまきの葉に",
+    "lower": "霧立ちのぼる秋の夕暮",
+    "upperKana": "むらさめのつゆもまだひぬまきのはに",
+    "lowerKana": "きりたちのぼるあきのゆふぐれ"
+  },
+  {
+    "number": 88,
+    "poet": "皇嘉門院別当",
+    "poetKana": "こうかもんいんのべっとう",
+    "upper": "難波江の葦のかりねのひとよゆゑ",
+    "lower": "身をつくしてや恋ひわたるべき",
+    "upperKana": "なにはえのあしのかりねのひとよゆゑ",
+    "lowerKana": "みをつくしてやこひわたるべき"
+  },
+  {
+    "number": 89,
+    "poet": "式子内親王",
+    "poetKana": "しょくしないしんのう",
+    "upper": "玉の緒よ絶えなば絶えねながらへば",
+    "lower": "忍ぶることの弱りもぞする",
+    "upperKana": "たまのをよたえなばたえねながらへば",
+    "lowerKana": "しのぶることのよわりもぞする"
+  },
+  {
+    "number": 90,
+    "poet": "殷富門院大輔",
+    "poetKana": "いんぷもんいんのたいふ",
+    "upper": "見せばやな雄島の海人の袖だにも",
+    "lower": "濡れにぞ濡れし色は変はらず",
+    "upperKana": "みせばやなをじまのあまのそでだにも",
+    "lowerKana": "ぬれにぞぬれしいろはかはらず"
+  },
+  {
+    "number": 91,
+    "poet": "後京極摂政前太政大臣",
+    "poetKana": "ごきょうごくせっしょうさきのだじょうだいじん",
+    "upper": "きりぎりす鳴くや霜夜のさむしろに",
+    "lower": "衣かたしきひとりかも寝む",
+    "upperKana": "きりぎりすなくやしもよのさむしろに",
+    "lowerKana": "ころもかたしきひとりかもねむ"
+  },
+  {
+    "number": 92,
+    "poet": "二条院讃岐",
+    "poetKana": "にじょういんのさぬき",
+    "upper": "わが袖は潮干に見えぬ沖の石の",
+    "lower": "人こそ知らねかわく間もなし",
+    "upperKana": "わがそではしほひにみえぬおきのいしの",
+    "lowerKana": "ひとこそしらねかわくまもなし"
+  },
+  {
+    "number": 93,
+    "poet": "鎌倉右大臣",
+    "poetKana": "かまくらのうだいじん",
+    "upper": "世の中は常にもがもな渚漕ぐ",
+    "lower": "海人の小舟の綱手かなしも",
+    "upperKana": "よのなかはつねにもがもななぎさこぐ",
+    "lowerKana": "あまのをぶねのつなでかなしも"
+  },
+  {
+    "number": 94,
+    "poet": "参議雅経",
+    "poetKana": "さんぎまさつね",
+    "upper": "み吉野の山の秋風小夜更けて",
+    "lower": "ふるさと寒く衣うつなり",
+    "upperKana": "みよしののやまのあきかぜさよふけて",
+    "lowerKana": "ふるさとさむくころもうつなり"
+  },
+  {
+    "number": 95,
+    "poet": "前大僧正慈円",
+    "poetKana": "さきのだいそうじょうじえん",
+    "upper": "おほけなく憂き世の民におほふかな",
+    "lower": "わが立つ杣にすみ染の袖",
+    "upperKana": "おほけなくうきよのたみにおほふかな",
+    "lowerKana": "わがたつそまにすみぞめのそで"
+  },
+  {
+    "number": 96,
+    "poet": "入道前太政大臣",
+    "poetKana": "にゅうどうさきのだじょうだいじん",
+    "upper": "花さそふ嵐の庭の雪ならで",
+    "lower": "ふりゆくものはわが身なりけり",
+    "upperKana": "はなさそふあらしのにはのゆきならで",
+    "lowerKana": "ふりゆくものはわがみなりけり"
+  },
+  {
+    "number": 97,
+    "poet": "権中納言定家",
+    "poetKana": "ごんちゅうなごんさだいえ",
+    "upper": "来ぬ人を松帆の浦の夕なぎに",
+    "lower": "焼くや藻塩の身もこがれつつ",
+    "upperKana": "こぬひとをまつほのうらのゆふなぎに",
+    "lowerKana": "やくやもしほのみもこがれつつ"
+  },
+  {
+    "number": 98,
+    "poet": "従二位家隆",
+    "poetKana": "じゅにいいえたか",
+    "upper": "風そよぐならの小川の夕暮は",
+    "lower": "みそぎぞ夏のしるしなりける",
+    "upperKana": "かぜそよぐならのをがはのゆふぐれは",
+    "lowerKana": "みそぎぞなつのしるしなりける"
+  },
+  {
+    "number": 99,
+    "poet": "後鳥羽院",
+    "poetKana": "ごとばいん",
+    "upper": "人もをし人もうらめしあじきなく",
+    "lower": "世を思ふゆゑにもの思ふ身は",
+    "upperKana": "ひともをしひともうらめしあぢきなく",
+    "lowerKana": "よをおもふゆゑにものおもふみは"
+  },
+  {
+    "number": 100,
+    "poet": "順徳院",
+    "poetKana": "じゅんとくいん",
+    "upper": "百敷や古き軒端のしのぶにも",
+    "lower": "なほあまりある昔なりけり",
+    "upperKana": "ももしきやふるきのきばのしのぶにも",
+    "lowerKana": "なほあまりあるむかしなりけり"
+  }
+];
+
+</script>
+  <script>
+(() => {
+  const poems = Array.isArray(window.POEMS) ? window.POEMS : [];
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => [...document.querySelectorAll(s)];
+
+  const KEY = 'hyakushucho-history-v1';
+  const MODE_KEY = 'hyakushucho-mode-history-v1';
+
+  let history = {};
+  try { history = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch { history = {}; }
+
+  let modeHistory = {};
+  try { modeHistory = JSON.parse(localStorage.getItem(MODE_KEY) || '{}') || {}; } catch { modeHistory = {}; }
+
+  let session = null;
+  let scriptMode = localStorage.getItem('hyakushucho-script') || 'original';
+  let orderMode = localStorage.getItem('hyakushucho-order') || 'number';
+  let studyTarget = localStorage.getItem('hyakushucho-study-target') || 'all';
+  let rangeStart = parseInt(localStorage.getItem('hyakushucho-range-start') || '1', 10);
+  let rangeEnd = parseInt(localStorage.getItem('hyakushucho-range-end') || '100', 10);
+  let questionCount = localStorage.getItem('hyakushucho-question-count') || '20';
+
+  const views = {
+    home: $('#homeView'),
+    study: $('#studyView'),
+    list: $('#listView')
+  };
+
+  const labels = {
+    upperLower: '上の句 → 下の句',
+    lowerUpper: '下の句 → 上の句',
+    poetFull: '歌人 → 全文',
+    fullPoet: '全文 → 歌人',
+    numberFull: '番号 → 全文'
+  };
+
+  const studyTargetLabels = {
+    all: 'すべて',
+    untried: '未トライ',
+    good: '○のみ',
+    review: '要復習（△・×）'
+  };
+
+  function updateMobileSettingsSummary(){
+    const el = $('#mobileSettingsSummary');
+    if(!el) return;
+    const rangeText = `${rangeStart}〜${rangeEnd}番`;
+    const targetText = studyTargetLabels[studyTarget] || 'すべて';
+    el.textContent = `${rangeText}・${targetText}`;
+  }
+
+
+  function showView(name){
+    Object.entries(views).forEach(([key, el]) => {
+      if(!el) return;
+      const active = key === name;
+      el.style.display = active ? 'block' : 'none';
+      el.classList.toggle('active', active);
+      el.classList.remove('fade-enter');
+    });
+    const target = views[name];
+    if(!target) return;
+    requestAnimationFrame(() => target.classList.add('fade-enter'));
+  }
+
+  function poemText(p, part){
+    return scriptMode === 'kana' ? (p[part + 'Kana'] || p[part] || '') : (p[part] || '');
+  }
+
+  function saveHistory(){
+    localStorage.setItem(KEY, JSON.stringify(history));
+    updateStats();
+  }
+
+  function saveModeHistory(){
+    localStorage.setItem(MODE_KEY, JSON.stringify(modeHistory));
+    updateStats();
+  }
+
+  function modeRatings(mode, number){
+    const byMode = modeHistory[mode];
+    if(!byMode) return [];
+    const ratings = byMode[number];
+    return Array.isArray(ratings) ? ratings : [];
+  }
+
+  function latestRating(mode, number){
+    const ratings = modeRatings(mode, number);
+    return ratings.length ? ratings[ratings.length - 1] : null;
+  }
+
+  function needsReview(mode, number){
+    const latest = latestRating(mode, number);
+    return latest === 'maybe' || latest === 'bad';
+  }
+
+  function ratingMark(rating){
+    return rating === 'good' ? '○' : rating === 'maybe' ? '△' : rating === 'bad' ? '×' : '—';
+  }
+
+  function updateStats(){
+    const modes = ['upperLower','lowerUpper','poetFull','fullPoet','numberFull'];
+
+    modes.forEach(mode => {
+      const card = document.querySelector(`[data-stat-mode="${mode}"]`);
+      if(!card) return;
+
+      const counts = {good:0, maybe:0, bad:0, none:0};
+      poems.forEach(p => {
+        const r = latestRating(mode, p.number);
+        if(r === 'good' || r === 'maybe' || r === 'bad') counts[r]++;
+        else counts.none++;
+      });
+
+      card.querySelector('.s-good').textContent = `○ ${counts.good}`;
+      card.querySelector('.s-maybe').textContent = `△ ${counts.maybe}`;
+      card.querySelector('.s-bad').textContent = `× ${counts.bad}`;
+      card.querySelector('.s-none').textContent = `未 ${counts.none}`;
+    });
+  }
+
+  function clampRanges(){
+    rangeStart = Math.max(1, Math.min(100, Number(rangeStart) || 1));
+    rangeEnd = Math.max(1, Math.min(100, Number(rangeEnd) || 100));
+    if(rangeStart > rangeEnd) rangeEnd = rangeStart;
+  }
+
+  function updateQuestionCountOptions(){
+    const sel = $('#questionCount');
+    if(!sel) return;
+    const available = Math.max(1, rangeEnd - rangeStart + 1);
+    const bases = [10,20,30,50,100].filter(n => n <= available);
+
+    sel.innerHTML = '';
+    bases.forEach(n => {
+      const o = document.createElement('option');
+      o.value = String(n);
+      o.textContent = `${n}首`;
+      sel.appendChild(o);
+    });
+
+    const all = document.createElement('option');
+    all.value = 'all';
+    all.textContent = `すべて（${available}首）`;
+    sel.appendChild(all);
+
+    const valid = [...sel.options].some(o => o.value === questionCount);
+    if(!valid){
+      questionCount = available < 20 ? 'all' : String(Math.max(...bases.filter(n => n <= 20)));
+      localStorage.setItem('hyakushucho-question-count', questionCount);
+    }
+    sel.value = questionCount;
+  }
+
+  function populateRangeSelects(){
+    clampRanges();
+    const startSel = $('#rangeStart');
+    const endSel = $('#rangeEnd');
+    if(!startSel || !endSel) return;
+
+    startSel.innerHTML = '';
+    for(let i=1;i<=100;i++){
+      const o=document.createElement('option');
+      o.value=String(i);
+      o.textContent=i+'番';
+      if(i===rangeStart) o.selected=true;
+      startSel.appendChild(o);
+    }
+
+    endSel.innerHTML = '';
+    for(let i=rangeStart;i<=100;i++){
+      const o=document.createElement('option');
+      o.value=String(i);
+      o.textContent=i+'番';
+      if(i===rangeEnd) o.selected=true;
+      endSel.appendChild(o);
+    }
+
+    if($('#rangeCountLabel')) {
+      $('#rangeCountLabel').textContent = `（${rangeEnd-rangeStart+1}首）`;
+    }
+
+    localStorage.setItem('hyakushucho-range-start', String(rangeStart));
+    localStorage.setItem('hyakushucho-range-end', String(rangeEnd));
+    updateQuestionCountOptions();
+    updateMobileSettingsSummary();
+  }
+
+  function selectedPool(mode){
+    let pool = poems.filter(p => p.number >= rangeStart && p.number <= rangeEnd);
+
+    if(studyTarget === 'review'){
+      pool = pool.filter(p => needsReview(mode, p.number));
+    } else if(studyTarget === 'good'){
+      pool = pool.filter(p => latestRating(mode, p.number) === 'good');
+    } else if(studyTarget === 'untried'){
+      pool = pool.filter(p => latestRating(mode, p.number) === null);
+    }
+
+    pool = [...pool].sort((a,b)=>a.number-b.number);
+
+    if(orderMode === 'shuffle'){
+      for(let i=pool.length-1;i>0;i--){
+        const j=Math.floor(Math.random()*(i+1));
+        [pool[i],pool[j]]=[pool[j],pool[i]];
+      }
+    }
+
+    const n = questionCount === 'all' ? pool.length : Math.min(Number(questionCount), pool.length);
+    return pool.slice(0, n);
+  }
+
+  function fillAnswer(p){
+    $('#answerNumber').textContent = `第${p.number}番`;
+    $('#answerPoet').textContent = scriptMode==='kana' ? (p.poetKana || p.poet) : p.poet;
+    $('#answerUpper').textContent = poemText(p,'upper');
+    $('#answerLower').textContent = poemText(p,'lower');
+  }
+
+  function renderQuestion(){
+    if(!session || !session.queue.length) return;
+    const p = session.queue[session.index];
+    if(!p) return;
+
+    $('#progressLabel').textContent = `${session.index+1} / ${session.queue.length}`;
+    $('#progressBar').style.width = `${((session.index)/session.queue.length)*100}%`;
+    $('#modeLabel').textContent = labels[session.mode] || '暗記';
+
+    $('#answer').hidden = true;
+    $('#revealBtn').hidden = false;
+
+    if(session.mode === 'upperLower'){
+      $('#promptLabel').textContent = '上の句';
+      $('#prompt').textContent = poemText(p,'upper');
+    } else if(session.mode === 'lowerUpper'){
+      $('#promptLabel').textContent = '下の句';
+      $('#prompt').textContent = poemText(p,'lower');
+    } else if(session.mode === 'poetFull'){
+      $('#promptLabel').textContent = '歌人';
+      $('#prompt').textContent = scriptMode==='kana' ? (p.poetKana || p.poet) : p.poet;
+    } else if(session.mode === 'fullPoet'){
+      $('#promptLabel').textContent = '全文';
+      $('#prompt').innerHTML = `<span>${poemText(p,'upper')}</span><span>${poemText(p,'lower')}</span>`;
+    } else {
+      $('#promptLabel').textContent = '番号';
+      $('#prompt').textContent = String(p.number);
+    }
+
+    fillAnswer(p);
+
+    // 「全文 → 歌人」では答えとして番号と歌人を見せる。
+    if(session.mode === 'fullPoet'){
+      $('#answerUpper').textContent = '';
+      $('#answerLower').textContent = '';
+    }
+  }
+
+  function start(mode){
+    const queue = selectedPool(mode);
+    session = {
+      mode,
+      queue,
+      index: 0,
+      counts: {good:0, maybe:0, bad:0},
+      missed: []
+    };
+
+    showView('study');
+    $('#modeLabel').textContent = labels[mode] || '暗記';
+
+    if(!queue.length){
+      $('.study-card').hidden = true;
+      $('#sessionSummary').hidden = false;
+      $('#progressBar').style.width = '0%';
+      $('#progressLabel').textContent = '0 / 0';
+      $('#sumGood').textContent = '0';
+      $('#sumMaybe').textContent = '0';
+      $('#sumBad').textContent = '0';
+      const emptyMessages = {
+        review: '<p>このモード・範囲には、現在「要復習（△・×）」の歌はありません。</p>',
+        good: '<p>このモード・範囲には、現在「○」の歌はありません。</p>',
+        untried: '<p>このモード・範囲には、現在「未トライ」の歌はありません。</p>'
+      };
+      $('#missedList').innerHTML =
+        emptyMessages[studyTarget] || '<p>出題できる歌がありません。</p>';
+      return;
+    }
+
+    $('.study-card').hidden = false;
+    $('#sessionSummary').hidden = true;
+    renderQuestion();
+  }
+
+  function rate(rating){
+    if(!session) return;
+    const p = session.queue[session.index];
+    if(!p) return;
+
+    // 従来の全体履歴も維持（百首一覧・全体集計用）。
+    history[p.number] = Array.isArray(history[p.number]) ? history[p.number] : [];
+    history[p.number].push(rating);
+    history[p.number] = history[p.number].slice(-20);
+    saveHistory();
+
+    // 01〜05のモード別にも独立して履歴を保存。
+    modeHistory[session.mode] = modeHistory[session.mode] || {};
+    modeHistory[session.mode][p.number] =
+      Array.isArray(modeHistory[session.mode][p.number]) ? modeHistory[session.mode][p.number] : [];
+    modeHistory[session.mode][p.number].push(rating);
+    modeHistory[session.mode][p.number] = modeHistory[session.mode][p.number].slice(-20);
+    saveModeHistory();
+
+    session.counts[rating]++;
+    if(rating !== 'good') session.missed.push({p, rating});
+    session.index++;
+
+    if(session.index >= session.queue.length){
+      finishSession();
+    } else {
+      renderQuestion();
+    }
+  }
+
+  function finishSession(){
+    $('.study-card').hidden = true;
+    $('#sessionSummary').hidden = false;
+    $('#progressBar').style.width = '100%';
+    $('#progressLabel').textContent = `${session.queue.length} / ${session.queue.length}`;
+
+    $('#sumGood').textContent = session.counts.good;
+    $('#sumMaybe').textContent = session.counts.maybe;
+    $('#sumBad').textContent = session.counts.bad;
+
+    const box = $('#missedList');
+    if(!session.missed.length){
+      box.innerHTML = '<p>全問 ○。きれいに出てきています。</p>';
+    } else {
+      box.innerHTML = '<strong>△・×だった歌</strong><br>' +
+        session.missed.map(x => `${x.rating==='maybe'?'△':'×'} 第${x.p.number}番　${x.p.poet}`).join('<br>');
+    }
+  }
+
+  function renderList(query=''){
+    const q = String(query || '').trim().toLowerCase();
+    const sortMode = $('#listSort')?.value || 'numberAsc';
+    const filterMode = $('#listFilterMode')?.value || 'upperLower';
+    const filterRating = $('#listFilterRating')?.value || 'all';
+
+    let filtered = poems.filter(p => {
+      if(q){
+        if(/^\d+$/.test(q)){
+          if(Number(p.number) !== Number(q)) return false;
+        } else {
+          const haystack = [p.poet,p.poetKana,p.upper,p.lower,p.upperKana,p.lowerKana]
+            .map(v=>String(v ?? '')).join(' ').toLowerCase();
+          if(!haystack.includes(q)) return false;
+        }
+      }
+
+      const r = latestRating(filterMode, p.number);
+      if(filterRating === 'all') return true;
+      if(filterRating === 'none') return !r;
+      if(filterRating === 'review') return r === 'maybe' || r === 'bad';
+      return r === filterRating;
+    });
+
+    const ratingPriority = r =>
+      r === 'bad' ? 0 : r === 'maybe' ? 1 : r === 'good' ? 2 : 3;
+
+    if(sortMode === 'numberDesc'){
+      filtered.sort((a,b)=>b.number-a.number);
+    } else if(sortMode === 'numberAsc'){
+      filtered.sort((a,b)=>a.number-b.number);
+    } else {
+      filtered.sort((a,b)=>{
+        const ra = ratingPriority(latestRating(sortMode, a.number));
+        const rb = ratingPriority(latestRating(sortMode, b.number));
+        return ra - rb || a.number - b.number;
+      });
+    }
+
+    const modes = ['upperLower','lowerUpper','poetFull','fullPoet','numberFull'];
+
+    $('#poemList').innerHTML = filtered.map(p => {
+      const poet = scriptMode==='kana' ? (p.poetKana || p.poet) : p.poet;
+      const marks = modes.map(mode => {
+        const r = latestRating(mode, p.number);
+        const cls = r || 'none';
+        return `<div class="mode-result ${cls}" title="${labels[mode]}">${ratingMark(r)}</div>`;
+      }).join('');
+
+      return `<article class="poem-row">
+        <div class="n">${p.number}</div>
+        <div class="poet">${poet}</div>
+        <div class="text"><span>${poemText(p,'upper')}</span><span>${poemText(p,'lower')}</span></div>
+        ${marks}
+      </article>`;
+    }).join('') || '<p class="list-empty">該当する歌がありません。</p>';
+  }
+
+  function xmlEscape(value){
+    return String(value ?? '')
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;')
+      .replace(/'/g,'&apos;');
+  }
+
+  function excelColumnName(n){
+    let s = '';
+    while(n > 0){
+      n--;
+      s = String.fromCharCode(65 + (n % 26)) + s;
+      n = Math.floor(n / 26);
+    }
+    return s;
+  }
+
+  function crc32(bytes){
+    let c = 0xffffffff;
+    for(const b of bytes){
+      c ^= b;
+      for(let k=0;k<8;k++) c = (c >>> 1) ^ ((c & 1) ? 0xedb88320 : 0);
+    }
+    return (c ^ 0xffffffff) >>> 0;
+  }
+
+  function u16(n){ return [n & 255, (n >>> 8) & 255]; }
+  function u32(n){ return [n & 255, (n >>> 8) & 255, (n >>> 16) & 255, (n >>> 24) & 255]; }
+
+  function makeZip(files){
+    const enc = new TextEncoder();
+    const chunks = [];
+    const central = [];
+    let offset = 0;
+
+    files.forEach(file => {
+      const name = enc.encode(file.name);
+      const data = typeof file.data === 'string' ? enc.encode(file.data) : file.data;
+      const crc = crc32(data);
+
+      const local = new Uint8Array([
+        0x50,0x4b,0x03,0x04, ...u16(20), ...u16(0), ...u16(0),
+        ...u16(0), ...u16(0), ...u32(crc), ...u32(data.length), ...u32(data.length),
+        ...u16(name.length), ...u16(0), ...name
+      ]);
+      chunks.push(local, data);
+
+      const cent = new Uint8Array([
+        0x50,0x4b,0x01,0x02, ...u16(20), ...u16(20), ...u16(0), ...u16(0),
+        ...u16(0), ...u16(0), ...u32(crc), ...u32(data.length), ...u32(data.length),
+        ...u16(name.length), ...u16(0), ...u16(0), ...u16(0), ...u16(0),
+        ...u32(0), ...u32(offset), ...name
+      ]);
+      central.push(cent);
+      offset += local.length + data.length;
+    });
+
+    const centralSize = central.reduce((n,c)=>n+c.length,0);
+    const end = new Uint8Array([
+      0x50,0x4b,0x05,0x06, ...u16(0), ...u16(0),
+      ...u16(files.length), ...u16(files.length),
+      ...u32(centralSize), ...u32(offset), ...u16(0)
+    ]);
+
+    return new Blob([...chunks, ...central, end], {
+      type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    });
+  }
+
+  function exportListToExcel(){
+    const q = String($('#searchInput')?.value || '').trim().toLowerCase();
+    const sortMode = $('#listSort')?.value || 'numberAsc';
+    const filterMode = $('#listFilterMode')?.value || 'upperLower';
+    const filterRating = $('#listFilterRating')?.value || 'all';
+
+    let rows = poems.filter(p => {
+      if(q){
+        if(/^\d+$/.test(q)){
+          if(Number(p.number) !== Number(q)) return false;
+        } else {
+          const haystack = [p.poet,p.poetKana,p.upper,p.lower,p.upperKana,p.lowerKana]
+            .map(v=>String(v ?? '')).join(' ').toLowerCase();
+          if(!haystack.includes(q)) return false;
+        }
+      }
+      const r = latestRating(filterMode, p.number);
+      if(filterRating === 'all') return true;
+      if(filterRating === 'none') return !r;
+      if(filterRating === 'review') return r === 'maybe' || r === 'bad';
+      return r === filterRating;
+    });
+
+    const priority = r => r === 'bad' ? 0 : r === 'maybe' ? 1 : r === 'good' ? 2 : 3;
+    if(sortMode === 'numberDesc') rows.sort((a,b)=>b.number-a.number);
+    else if(sortMode === 'numberAsc') rows.sort((a,b)=>a.number-b.number);
+    else rows.sort((a,b)=>
+      priority(latestRating(sortMode,a.number)) -
+      priority(latestRating(sortMode,b.number)) || a.number-b.number
+    );
+
+    const modes = ['upperLower','lowerUpper','poetFull','fullPoet','numberFull'];
+    const header = [
+      '番号','歌人','歌人（ひらがな）','上の句','下の句',
+      '上の句（ひらがな）','下の句（ひらがな）',
+      '01 上の句→下の句','02 下の句→上の句','03 歌人→全文',
+      '04 全文→歌人','05 番号→全文'
+    ];
+
+    const data = [header, ...rows.map(p => [
+      p.number, p.poet, p.poetKana, p.upper, p.lower, p.upperKana, p.lowerKana,
+      ...modes.map(mode => ratingMark(latestRating(mode,p.number)))
+    ])];
+
+    const sheetRows = data.map((row, ri) => {
+      const cells = row.map((v, ci) => {
+        const ref = excelColumnName(ci+1) + (ri+1);
+        if(typeof v === 'number'){
+          return `<c r="${ref}" s="${ri===0?1:0}"><v>${v}</v></c>`;
+        }
+        const style = ri===0 ? 1 : (ci >= 7 ? 2 : 0);
+        return `<c r="${ref}" t="inlineStr" s="${style}"><is><t>${xmlEscape(v)}</t></is></c>`;
+      }).join('');
+      return `<row r="${ri+1}">${cells}</row>`;
+    }).join('');
+
+    const worksheet = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <cols>
+    <col min="1" max="1" width="8" customWidth="1"/>
+    <col min="2" max="3" width="20" customWidth="1"/>
+    <col min="4" max="7" width="34" customWidth="1"/>
+    <col min="8" max="12" width="18" customWidth="1"/>
+  </cols>
+  <sheetData>${sheetRows}</sheetData>
+  <autoFilter ref="A1:L${data.length}"/>
+  <freezePane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>
+</worksheet>`;
+
+    const styles = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <fonts count="2">
+    <font><sz val="11"/><name val="Yu Gothic"/></font>
+    <font><b/><sz val="11"/><name val="Yu Gothic"/></font>
+  </fonts>
+  <fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills>
+  <borders count="1"><border/></borders>
+  <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+  <cellXfs count="3">
+    <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/>
+    <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"><alignment horizontal="center"/></xf>
+  </cellXfs>
+  <cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+
+    const workbook = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+ xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheets><sheet name="百首一覧" sheetId="1" r:id="rId1"/></sheets>
+</workbook>`;
+
+    const files = [
+      {name:'[Content_Types].xml', data:`<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+<Default Extension="xml" ContentType="application/xml"/>
+<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>
+<Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>
+<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>
+</Types>`},
+      {name:'_rels/.rels', data:`<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>
+</Relationships>`},
+      {name:'xl/workbook.xml', data:workbook},
+      {name:'xl/_rels/workbook.xml.rels', data:`<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>
+<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>
+</Relationships>`},
+      {name:'xl/worksheets/sheet1.xml', data:worksheet},
+      {name:'xl/styles.xml', data:styles}
+    ];
+
+    const blob = makeZip(files);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = '百人一首暗記帳_百首一覧.xlsx';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url), 1000);
+  }
+
+
+  // Event bindings
+  $$('.menu-card[data-mode]').forEach(b => {
+    b.addEventListener('click', () => start(b.dataset.mode));
+  });
+
+  $('#listBtn').addEventListener('click', () => {
+    const s = $('#searchInput');
+    if(s) s.value = '';
+    if($('#listSort')) $('#listSort').value = 'numberAsc';
+    if($('#listFilterRating')) $('#listFilterRating').value = 'all';
+    renderList('');
+    showView('list');
+  });
+
+  $('#revealBtn').addEventListener('click', () => {
+    $('#answer').hidden = false;
+    $('#revealBtn').hidden = true;
+  });
+
+  $$('.rate').forEach(b => b.addEventListener('click', () => rate(b.dataset.rating)));
+
+  $('#searchInput').addEventListener('input', e => renderList(e.target.value));
+  $('#excelExportBtn').addEventListener('click', exportListToExcel);
+  $('#listSort').addEventListener('change', () => renderList($('#searchInput').value));
+  $('#listFilterMode').addEventListener('change', () => renderList($('#searchInput').value));
+  $('#listFilterRating').addEventListener('change', () => renderList($('#searchInput').value));
+
+  ['#homeBtn','#backHome','#backFromList','#finishHome'].forEach(id => {
+    const el = $(id);
+    if(el) el.addEventListener('click', () => showView('home'));
+  });
+
+  $('#rangeStart').addEventListener('change', e => {
+    rangeStart = parseInt(e.target.value,10);
+    if(rangeEnd < rangeStart) rangeEnd = rangeStart;
+    populateRangeSelects();
+  });
+
+  $('#rangeEnd').addEventListener('change', e => {
+    rangeEnd = parseInt(e.target.value,10);
+    populateRangeSelects();
+  });
+
+  $('#questionCount').addEventListener('change', e => {
+    questionCount = e.target.value;
+    localStorage.setItem('hyakushucho-question-count', questionCount);
+  });
+
+  $('#orderMode').addEventListener('change', e => {
+    orderMode = e.target.value;
+    localStorage.setItem('hyakushucho-order', orderMode);
+  });
+
+  $('#studyTarget').addEventListener('change', e => {
+    studyTarget = e.target.value;
+    localStorage.setItem('hyakushucho-study-target', studyTarget);
+    updateMobileSettingsSummary();
+  });
+
+  $('#scriptMode').addEventListener('change', e => {
+    const answerWasVisible = $('#answer') && !$('#answer').hidden;
+    scriptMode = e.target.value;
+    localStorage.setItem('hyakushucho-script', scriptMode);
+
+    if(views.list.style.display !== 'none'){
+      renderList($('#searchInput')?.value || '');
+    }
+
+    if(views.study.style.display !== 'none' && session){
+      renderQuestion();
+      if(answerWasVisible){
+        $('#answer').hidden = false;
+        $('#revealBtn').hidden = true;
+      }
+    }
+  });
+
+  const mobileSettingsToggle = $('#mobileSettingsToggle');
+  const topSettingsPanel = $('#topSettingsPanel');
+  if(mobileSettingsToggle && topSettingsPanel){
+    mobileSettingsToggle.addEventListener('click', () => {
+      const open = mobileSettingsToggle.getAttribute('aria-expanded') === 'true';
+      mobileSettingsToggle.setAttribute('aria-expanded', String(!open));
+      topSettingsPanel.classList.toggle('mobile-open', !open);
+      requestAnimationFrame(updateTopbarHeightVar);
+    });
+  }
+
+  // Reset all learning results
+  const resetModal = $('#resetModal');
+  const openReset = () => {
+    if(!resetModal) return;
+    resetModal.hidden = false;
+    resetModal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeReset = () => {
+    if(!resetModal) return;
+    resetModal.hidden = true;
+    resetModal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  };
+
+  $('#resetResultsBtn')?.addEventListener('click', openReset);
+  $('#resetClose')?.addEventListener('click', closeReset);
+  $('#resetCancel')?.addEventListener('click', closeReset);
+  $$('[data-close-reset]').forEach(el => el.addEventListener('click', closeReset));
+
+  $('#resetConfirm')?.addEventListener('click', () => {
+    history = {};
+    modeHistory = {};
+    localStorage.removeItem(KEY);
+    localStorage.removeItem(MODE_KEY);
+    updateStats();
+
+    if(views.list && views.list.style.display !== 'none'){
+      renderList($('#searchInput')?.value || '');
+    }
+    closeReset();
+  });
+
+  // About modal
+  const aboutModal = $('#aboutModal');
+  const openAbout = () => {
+    if(!aboutModal) return;
+    aboutModal.hidden = false;
+    aboutModal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeAbout = () => {
+    if(!aboutModal) return;
+    aboutModal.hidden = true;
+    aboutModal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  };
+
+  const aboutBtn = $('#aboutBtn');
+  const aboutClose = $('#aboutClose');
+  if(aboutBtn) aboutBtn.addEventListener('click', openAbout);
+  if(aboutClose) aboutClose.addEventListener('click', closeAbout);
+  $$('[data-close-about]').forEach(el => el.addEventListener('click', closeAbout));
+  document.addEventListener('keydown', e => {
+    if(e.key !== 'Escape') return;
+    if(resetModal && !resetModal.hidden) closeReset();
+    if(aboutModal && !aboutModal.hidden) closeAbout();
+  });
+
+  function updateTopbarHeightVar(){
+    const topbar = document.querySelector('.topbar');
+    const h = topbar ? Math.ceil(topbar.getBoundingClientRect().height) : 0;
+    document.documentElement.style.setProperty('--hyakushucho-topbar-height', h + 'px');
+  }
+
+  updateTopbarHeightVar();
+  window.addEventListener('resize', updateTopbarHeightVar);
+  window.addEventListener('orientationchange', updateTopbarHeightVar);
+
+  const backToTopBtn = $('#backToTopBtn');
+  function updateBackToTop(){
+    if(!backToTopBtn) return;
+    backToTopBtn.classList.toggle('show', window.scrollY > 420);
+  }
+
+  if(backToTopBtn){
+    window.addEventListener('scroll', updateBackToTop, {passive:true});
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    });
+    updateBackToTop();
+  }
+
+  // Initial state
+  $('#scriptMode').value = scriptMode;
+  $('#orderMode').value = orderMode;
+  $('#studyTarget').value = studyTarget;
+  populateRangeSelects();
+  updateMobileSettingsSummary();
+  updateStats();
+  showView('home');
+})();
+</script>
+
+
+
+
+</body>
+</html>
