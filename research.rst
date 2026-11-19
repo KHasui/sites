@@ -10,7 +10,7 @@ Research
 .. only:: html or singlehtml
 .. raw:: html
      
-       <div class="a-target-_blank">For the complete list of publications, please visit <a target="_blank" href="https://researchmap.jp/khasui?lang=en">Researchmap</a>, <a target="_blank" href="https://orcid.org/0000-0002-7166-7385">ORCID <img src="https://khas.bitbucket.io/orcid_icon.png" width="15" height="15"></a>, or <a target="_blank" href="https://khas.bitbucket.io/_downloads/cvkh.pdf">CV <img src="https://khas.bitbucket.io/pdficon4.png" width="15" height="15"></a>. </div>
+       <div class="a-target-_blank">For the complete list of publications, please visit <a target="_blank" href="https://researchmap.jp/khasui?lang=en">Researchmap</a>, <a target="_blank" href="https://orcid.org/0000-0002-7166-7385">ORCID <img src="https://khasui.github.io/khas/orcid_icon.png" width="15" height="15"></a>, or <a target="_blank" href="https://khasui.github.io/khas/_downloads/cvkh.pdf">CV <img src="https://khasui.github.io/khas/pdficon4.png" width="15" height="15"></a>. </div>
 
 
 
@@ -36,7 +36,7 @@ Comments welcome.
 
 Published Papers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* | `"Do monetary policy and cost-push shock matter? Bank of JapanÅfs exit policy in 2024-2025" <https://doi.org/10.1007/s42973-026-00240-0>`_ 
+* | `"Do monetary policy and cost-push shock matter? Bank of JapanÔøΩfs exit policy in 2024-2025" <https://doi.org/10.1007/s42973-026-00240-0>`_ 
   | K. Hasui and Yuki Teranishi
   | Japanese Economic Review 77(4), 763-781, 2026. Special Issue: "Macroeconomics and Japan's Reality."
 

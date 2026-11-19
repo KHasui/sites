@@ -10,9 +10,9 @@ Curriculum Vitae
        
 
        <ul class="simple">
-       <li><div class="a-target-_blank"><a target="_blank" href="https://khas.bitbucket.io/_downloads/cvkh.pdf">CV <img src="https://khas.bitbucket.io/pdficon4.png" width="15" height="15"></a></div></li>
+       <li><div class="a-target-_blank"><a target="_blank" href="https://khasui.github.io/khas/_downloads/cvkh.pdf">CV <img src="https://khasui.github.io/khas/pdficon4.png" width="15" height="15"></a></div></li>
        <li><div class="a-target-_blank"><a target="_blank" href="https://researchmap.jp/khasui">Researchmap</a></div></li>
-       <li><div class="a-target-_blank"><a target="_blank" href="https://orcid.org/0000-0002-7166-7385">ORCID <img src="https://khas.bitbucket.io/orcid_icon.png" width="15" height="15"></a></div></li>
+       <li><div class="a-target-_blank"><a target="_blank" href="https://orcid.org/0000-0002-7166-7385">ORCID <img src="https://khasui.github.io/khas/orcid_icon.png" width="15" height="15"></a></div></li>
        </ul>
 
 
@@ -26,7 +26,7 @@ Curriculum Vitae
 
 | (Last name / First name)
 | Hasui  / Kohei
-| ˜@ˆä / N•½
+| ï¿½@ï¿½ï¿½ / ï¿½Nï¿½ï¿½
  
 |
 | Nationality: Japan 
